@@ -1,0 +1,238 @@
+@import "~normalize.css";
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Bold';
+	src: url('../fonts/GothamPro-Bold.eot');
+	src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+		url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Bold.woff') format('woff'),
+		url('../fonts/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro.eot');
+	src: local('Gotham Pro'), local('GothamPro'),
+		url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro.woff') format('woff'),
+		url('../fonts/GothamPro.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+h1,h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+    padding: 0; 
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Gotham Pro';
+    font-size: 24px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.header{
+    background: url('../img/home-bg.jpg') no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+.container{
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+}
+.logo__txt{
+    font-size: 16px;
+    line-height: 130%;
+    width: 208px;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.header__list{
+    display: flex;
+    gap: 36px;
+    li{ 
+        font-size: 18px;
+        line-height: 17px;
+        padding-bottom: 8px;
+        &:hover{
+            padding: 0;
+           border-bottom: 3px solid #FF6F4F; 
+        }
+    }
+}
+
+.btn{
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    border: 1px solid #FF4F4F;
+    border-radius: 24px;
+    padding: 15px 24px 14px 28px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.title{
+    text-transform: uppercase;
+    max-width: 893px;
+    margin-left: 116px;
+    font-size: 46px;
+    margin-bottom: 96px;
+    line-height: 64px;
+}
+.home__info{
+    max-width: 474px;
+    margin-left: 42px;
+}
+
+.home__info-list{
+    li{
+        list-style-image: url('../img/list.png');
+    }
+}
+.home__info-list{
+    margin: 39px 0 34px 55px;
+}
+.btn__test{
+    background: linear-gradient(360deg, #038483 0%, #00CDCD 100%);
+    box-shadow: 0px 6px 0px #026C6C;
+    border-radius: 40px;
+    padding: 22px 44px;
+    font-size: 20px;
+    color: #fff;
+}
+.title__content{
+    font-family: 'Gotham Pro Bold';
+    font-size: 50px;
+    line-height: 48px;
+    color: #008F8E;
+    text-align: center;
+}
+.live{
+    margin-bottom: 125px;
+}
+.live__box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 45px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.live__card-img{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.live__card{
+    .live__img{
+        margin-bottom: 20px;
+    }
+    p{
+        max-width: 316px;
+        line-height: 130%;
+    }
+ 
+}
+.live__card-right{
+    display: grid;
+    justify-items: end;
+    text-align: right;
+}
+
+.live__desc{
+    max-width: 986px;
+    padding: 41px 58px;
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(275.08deg, #DCF8F8 -9.98%, #ECF7FF 107.65%);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.why{
+    .title__content{
+        text-align: left;
+        margin-bottom: 32px;
+    }
+}
+.why__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.why__text{
+    max-width: 669px;
+}
+
+
+.astrofinplan{
+    margin-bottom: 58px;
+    .title__content{
+        text-align: left;
+        margin-bottom: 32px;
+    }
+    .why__inner{
+        align-items: inherit
+    
+    }
+}
+.container__astrofinplan{
+    max-width: 1536px;
+
+}
+.astrofinplan__description{
+    margin-top: 38px;
+    p{
+        width: 826px;
+    }
+   
+}
+.astrofinplan__link{
+    display: block;
+    margin-top: 17px;
+    position: relative;
+    color: #008F8E;
+    &::after{
+        content: '';
+        background: url('../img/link-right.png');
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        bottom: 0;
+    }
+}
