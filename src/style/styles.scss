@@ -1,32 +1,7 @@
-@import "~normalize.css";
 *,
 *::after,
 *::before{
     box-sizing: border-box;
-}
-
-@font-face {
-	font-family: 'Gotham Pro Bold';
-	src: url('../fonts/GothamPro-Bold.eot');
-	src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
-		url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/GothamPro-Bold.woff') format('woff'),
-		url('../fonts/GothamPro-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-
-
-@font-face {
-	font-family: 'Gotham Pro';
-	src: url('../fonts/GothamPro.eot');
-	src: local('Gotham Pro'), local('GothamPro'),
-		url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/GothamPro.woff') format('woff'),
-		url('../fonts/GothamPro.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
 }
 
 a{
@@ -48,7 +23,7 @@ body{
 }
 
 .header{
-    background: url('../img/home-bg.jpg') no-repeat;
+    background: url('./img/home-bg.jpg') no-repeat;
     background-size: cover;
 
     height: 100vh;
@@ -119,7 +94,7 @@ body{
 
 .home__info-list{
     li{
-        list-style-image: url('../img/list.png');
+        list-style-image: url('./img/list.png');
     }
 }
 .home__info-list{
@@ -212,13 +187,13 @@ body{
     }
 }
 .container__astrofinplan{
-    max-width: 1536px;
+    max-width: 1584px;
 
 }
 .astrofinplan__description{
     margin-top: 38px;
     p{
-        width: 826px;
+        max-width: 826px;
     }
    
 }
@@ -229,7 +204,7 @@ body{
     color: #008F8E;
     &::after{
         content: '';
-        background: url('../img/link-right.png');
+        background: url('./img/link-right.png');
         height: 24px;
         width: 24px;
         position: absolute;
