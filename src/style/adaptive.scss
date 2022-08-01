@@ -1,0 +1,403 @@
+
+
+@media(max-width: 1525px){
+    .result__inner{
+        background-size: 750px auto;
+    }
+    .result__info-one, .result__info-two {
+        height: 659px;
+    }
+}
+@media(max-width: 1450px){
+    .astrofinplan .why__inner{
+        align-items: center;
+    }
+    .astrofinplan__description{
+        position: static;
+        
+    }
+    .astrofinplan__img{
+        img{
+            width: 620px;
+            height: 670px;
+        }
+    }
+    .result__inner{
+        background-size: 650px auto;
+        .btn__test{
+            padding: 22px 14px;
+            font-size: 16px;
+        }
+    }
+    .result__info-one, .result__info-two {
+        height: 588px;
+    }
+}
+@media(max-width: 1320px){
+    .result__inner{
+        background-size: 549px auto;
+        .btn__test{
+            font-size: 12px;
+            padding: 22px 10px;
+        }
+    }
+    .result__info-one, .result__info-two {
+        height: 509px;
+    }
+    .result__text{
+        font-size: 16px;
+    }
+    .questions__link{
+        a{
+            font-size: 22px;
+        }
+    }
+    .questions__input{
+        width: 58%;
+    }
+    .input__list{
+        flex-direction: column;
+        gap: 18px;
+    }
+    .questions__form {
+        max-width: 100%;
+        width: 100%;
+    }
+    .questions__button {
+        flex-direction: column;
+        column-gap: 0;
+        margin-top: 26px;
+        align-items: center;
+        row-gap: 26px;
+        text-align: center;
+    }
+    .questions__button-text {
+        max-width: 593px;
+    }
+}
+@media(max-width: 1240px){
+    .header{
+        background-position: center;
+    }
+    .header__list {
+        display: none;
+   
+    }
+    .social__phone{
+        display: none;
+    }
+    .burger{
+        display: block;
+        width: 57px;
+        padding: 18px 16px;
+        border-radius: 50%;
+        margin-left: 4px;
+        background: linear-gradient(180deg, #038483 0%, #00CDCD 100%);
+        box-shadow: 0px 0px 30px #FFFFFF;
+        span{
+           display: block;
+            width: 25px;
+            height: 3px;
+            border-radius: 5px;
+            background-color: #fff;
+            &+span{
+                margin-top: 6px;
+            }
+        }
+    }
+    .title{
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    .home__info{
+       margin: 0 auto;
+    }
+    .live__desc{
+        max-width: 100%;
+    }
+    .why__text{
+    font-size: 20px;
+    }
+    .result__inner{
+        display: grid;
+        background: none;
+    }
+    .result__info-one, .result__info-two {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .result_box-one, .result_box-two{
+        max-width: 409px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
+        border-left: 10px solid #FF6F4F;
+        padding: 16px 16px 16px 28px;
+        height: 170px;
+    }
+
+    .result__title{
+        font-size: 19px;
+    }
+    .result__info-one, .result__info-two {
+        height: 440px;
+    }
+    .result__inner .btn__test {
+     display: grid;
+     grid-row: 3;
+     width: 350px;
+     padding: 18px 44px;
+     font-size: 18px;
+     margin: 0 auto;
+    }
+    .result_box-two-pos, .result_box-two-sfer{
+        margin-top: 0;
+    }
+    .result_box-two{
+        text-align: left;
+    }
+    .result_box-one-two{
+        border-left: 10px solid #008F8E;
+    }
+    .result_box-one-three{
+        border-left: 10px solid #46B6B6;
+    }
+    .result_box-one-four{
+        border-left: 10px solid #A7EEEE;
+    }
+    .result_box-two-one{
+        border-left: 10px solid #008F8E;
+    }
+    .result_box-two-sfer{
+        border-left: 10px solid #46B6B6;
+    }
+    .result_box-two-pos{
+        border-left: 10px solid #A7EEEE;
+    }
+    .result_box-two-pos-two{
+        border-left: 10px solid #008F8E;
+    }
+}
+
+@media (max-width: 960px){
+    br{
+        display: none;
+    }
+    .live__box{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: inherit;
+        column-gap: 29px;
+        row-gap: 67px;
+      
+    }
+    .live__card{
+        text-align: center;
+        margin: 0 auto;
+        font-size: 18px;
+        &-right{
+            justify-items: center;
+        }
+    }
+    .live__card-img{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 3;
+        margin: 0 auto;
+    }
+    .result_box-one, .result_box-two{
+        max-width: 329px;
+    }
+
+    .title__content{
+        font-size: 42px;
+    }
+    .result__title {
+        font-size: 16px;
+    }
+    .result__text {
+        font-size: 14px;
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+    .result__box {
+         box-shadow: none; 
+         padding: 0; 
+    }
+    .questions__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .question__box {
+        padding: 34px 30px 30px 30px;
+    }
+    .questions__subtext {
+        display: none;
+    }
+}
+@media(max-width: 770px){
+    .header{
+        height: max-content;
+        margin-bottom: 61px;
+    }
+    .title{
+        max-width: 542px;
+        text-align: left;
+        font-size: 42px;
+        margin-left: 0;
+        &__content{
+            font-size: 42px;
+            line-height: 120%;
+        }
+    }
+    .home__info{
+        margin-left: 0;
+    }
+    .home__info-list {
+        margin: 24px 0 42px 40px;
+    }
+    .live__card-img{
+     max-width: 600px;
+     height: 600px;
+    }
+    .why__inner{
+        flex-direction: column;
+    }
+    .astrofinplan .why__inner{
+        display: grid;
+    }
+    .astrofinplan__description .title__content{
+        text-align: center;
+        grid-column: 1;
+    }
+    .why__text{
+     font-size: 18px;
+    }
+    .why__img{
+        img{
+            max-width: 600px;
+            height: 600px;
+        }
+    }
+    .astrofinplan__description{
+        font-size: 18px;
+    }
+    .astrofinplan__img img {
+        width: 571px;
+        height: 621px;
+    }
+    
+}
+
+@media(max-width: 670px){
+    .btn{
+        display: none;
+    }
+    .live__card p {
+        max-width: 230px;
+    }
+    .live__card-img{
+        max-width: 515px;
+        height: 515px;
+       }
+    .live__img{
+        width: 100px;
+        height: 100px;
+    }
+    .why__img{
+        img{
+            width: max-content;
+            height: 500px;
+        }
+    }
+}
+@media(max-width: 520px){
+    .logo{
+        width: 89px;
+    }
+    .title{
+        font-size: 24px;
+        max-width: 328px;
+        margin-bottom: 2px;
+        margin-top: 25px;
+    }
+    .header__logo {
+        column-gap: 14px;
+    }
+    .logo__txt {
+        font-size: 12px;
+        max-width: 156px;
+    }
+    .title__home{
+        max-width: 328px;
+        font-size: 18px;
+    }
+    .home__info-list {
+        margin: 13px 0 27px 40px;
+        font-size: 16px;
+        li{
+            &::marker{
+              font-size: 16px;;
+            }
+        }
+    }
+    .btn__test {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 14px 0;
+        font-size: 14px;
+    }
+    .live__box{
+        grid-template-columns: 1fr;
+    }
+    .live__card-img{
+        max-width: 328px;
+        height: 328px;
+       }
+    .live__card-img {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .live__desc-text{
+        font-size: 14px;
+    }
+    .why__img{
+        img{
+            max-width: 328px;
+            height: 328px;
+        }
+    }
+    .why__text{
+        font-size: 14px;
+    }
+    .burger{
+        width: 48px;
+        padding: 14.5px 14px;
+        span{
+            width: 20px;
+            &+span{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .logo{
+        width: 75px;
+    }
+    .logo__txt {
+        font-size: 10px;
+        max-width: 140px;
+    }
+    .burger {
+        width: 30px;
+        padding: 10.5px 8px;
+        span{
+            width: 15px;
+        }
+    }
+
+}
