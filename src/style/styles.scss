@@ -21,7 +21,9 @@ body{
     line-height: 140%;
     color: #000000;
 }
-
+input{
+    outline: none;
+}
 .header{
     background: url('./img/home-bg.jpg') no-repeat;
     background-size: cover;
@@ -48,11 +50,11 @@ body{
 .header__logo{
     display: flex;
     align-items: center;
-    gap: 22px;
+    column-gap: 22px;
 }
 .header__list{
     display: flex;
-    gap: 36px;
+    column-gap: 36px;
     li{ 
         font-size: 18px;
         line-height: 17px;
@@ -71,12 +73,17 @@ body{
     border: 1px solid #FF4F4F;
     border-radius: 24px;
     padding: 15px 24px 14px 28px;
+    transition: ease-in-out .3s;
+    &:hover{
+        background:#FF4F4F;
+        color: #fff;
+    }
 }
 
 .social{
     display: flex;
     align-items: center;
-    gap: 16px;
+    column-gap: 16px;
 }
 
 .title{
@@ -107,11 +114,15 @@ body{
     padding: 22px 44px;
     font-size: 20px;
     color: #fff;
+    transition: .5s ease-in-out;
+    &:hover{
+        background: linear-gradient(360deg, #0CDCD0 0%, #038483 100%);
+    }
 }
 .title__content{
     font-family: 'Gotham Pro Bold';
     font-size: 50px;
-    line-height: 48px;
+    line-height: 65px;
     color: #008F8E;
     text-align: center;
 }
@@ -167,10 +178,11 @@ body{
 .why__inner{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  
 }
 
 .why__text{
+    margin-top: 83px;
     max-width: 669px;
 }
 
@@ -182,8 +194,9 @@ body{
         margin-bottom: 32px;
     }
     .why__inner{
-        align-items: inherit
-    
+        align-items: inherit;
+        position: relative;
+        
     }
 }
 .container__astrofinplan{
@@ -192,6 +205,9 @@ body{
 }
 .astrofinplan__description{
     margin-top: 38px;
+    position: absolute;
+    z-index: -1;
+    left: 689px;
     p{
         max-width: 826px;
         &+p{
@@ -256,7 +272,8 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 751px;
-    width: 435px;
+    // width: 435px;
+    flex: 0 0 435px;
 }
 .result_box-two{
     width: 425px;
@@ -279,9 +296,10 @@ body{
 .step__inner{
     display: flex;
     background: url('./img/plan.png') no-repeat;
-    background-position: right bottom -30px;
-    margin-top: 71px;
-    gap: 47px;
+    background-position: right -82px bottom -51px;
+    margin-top: 50px;
+    margin-left: 44px;
+    column-gap: 47px;
 }
 
 .step__info{
@@ -294,7 +312,19 @@ body{
 .step{
     margin-bottom: 149px;
 }
+.step__description{
+    max-width: 1101px;
 
+}
+.step__three{
+    max-width: 770px;
+}
+.step__four{
+    max-width: 759px;
+}
+.step__five{
+    max-width: 781px;
+}
 .step__title{
     font-family: 'Gotham Pro Bold';
 }
@@ -307,16 +337,19 @@ body{
 }
 .tarife__inner{
     display: flex;
+    flex-direction: column;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
-    padding: 57px 0 63px 70px;
-    
+    padding: 57px 90px 63px 70px;
     .btn__test{
         background: linear-gradient(360deg, #038483 0%, #00CDCD 100%);
         box-shadow: 0px 4px 0px #026C6C;
         border-radius: 50px;
         padding: 14px 47px;
         font-size: 16px;
+        &:hover{
+            background: linear-gradient(360deg, #0CDCD0 0%, #038483 100%);
+        }
     }
     .download{
         padding: 14px 30px;
@@ -326,20 +359,54 @@ body{
 .tarife__container{
     max-width: 1570px;
 }
+.tarife__box-title, .tarife__box-desc, .tarife__box-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tarife__box-title-desc{
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+    .tarife__title-right{
+        margin-right: 45px;
+    }
+}
+.tarife__box-title-content{
+// padding-right: 560px;
+width: 50%;
+}
+.tarife__box-price{
+    padding-top: 44px;
+    border-top: 1px solid #E5E5EB;
+    justify-content: flex-end;
+    flex: 0 0 50%;
+}
+
+
 .tarife__list{
     display: flex;
-    margin-top: 56px;
+    flex: 1 1 auto; 
+    margin-top: 33px;
     height: 350px;
-    margin-bottom: 73px;
+    margin-bottom: 45px;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-
+    border-top: 1px solid #E5E5EB;
+    padding-top: 36px;
+    &-left{
+        align-items: flex-start;
+        flex: 0 0 53%;
+    }
     li{
         font-size: 20px;
         line-height: 130%;
         font-family: 'Gotham Pro Bold';
     }
 }
+
+
 .tarife__plan{
     text-align: center;
     &-left{
@@ -347,12 +414,16 @@ body{
     }
 }
 .tarife__title{
-    margin-top: 20px;
+
     font-size: 20px;
     line-height: 130%;
 }
 .tarife__link{
+    &+.tarife__link{
+        margin-left: 33px;  
+    }
     .tarife__title{
+        text-align: center;
         margin-bottom: 13px;
     }
     img{
@@ -362,12 +433,14 @@ body{
 
 .answer{
     margin-bottom: 150px;
+    &__img{
+        padding-right: 103px;
+    }
 }
 .answer__inner{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 38px;
+    margin-top: 91px;
 }
 .answer__item{
     max-width: 717px;
@@ -383,7 +456,7 @@ body{
 }
 
 .answer__text{
-    padding: 12px 0 40px;
+    padding-top: 12px;
     display: none;
     font-size: 20px;
 }
@@ -438,7 +511,7 @@ body{
 .questions__link{
     display: flex;
     align-items: center;
-    gap: 15px;
+    column-gap: 15px;
     font-family: 'Gotham Pro Bold';
 }
 .questions__subtext{
@@ -463,9 +536,10 @@ body{
 }
 
 .questions__form{
-    width: 300px;
+    max-width: 300px;
     border: none;
     height: 60px;
+    padding: 30px 15px;
     border-radius: 8px;
 }
 
@@ -477,11 +551,11 @@ body{
 }
 .input__list{
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
 }
 .questions__button{
     display: flex;
-    gap: 32px;
+    column-gap: 32px;
     margin-top: 60px;
     button{
         border: none;
@@ -491,6 +565,10 @@ body{
         padding: 15px 46px;
         font-size: 16px;
         color: #FFFFFF;
+        cursor: pointer;
+        &:hover{
+            background: linear-gradient(360deg, #FF876C 0%, #FF4F4F 100%);
+        }
     }
 }
 .questions__button-text{
@@ -520,14 +598,33 @@ body{
 .footer__phone{
     display: flex;
     align-items: center;
-    gap: 15px;
+    column-gap: 15px;
     margin-top: 48px;
+    .footer__social-link{
+        padding: 6px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        transition: ease all .3s;
+        &:hover{
+            background: #009FD6;
+        }
+        &-whatsapp{
+            padding: 12px;
+            &:hover{
+                background: #1EA918;
+            }
+        }
+    }
 }
 .footer__company-link{
     font-size: 18px;
     width: 205px;
+    margin-left: 10px;
    a{
     color: #fff;
+    &:hover{
+        text-decoration: underline;
+    }
    }
 }
 .footer__title{
@@ -542,6 +639,10 @@ body{
     font-size: 16px;
     color: #FFFFFF;
     opacity: 0.8;
+    transition: all .2s;
+    &:hover{
+        opacity: 1;
+    }
 }
 
 .footer__course{
