@@ -1,5 +1,7 @@
 
-
+// *{
+//     outline: 1px solid red;
+// }
 @media(max-width: 1525px){
     .result__inner{
         background-size: 750px auto;
@@ -19,7 +21,6 @@
     .astrofinplan__img{
         img{
             width: 620px;
-            height: 670px;
         }
     }
     .result__inner{
@@ -31,6 +32,18 @@
     }
     .result__info-one, .result__info-two {
         height: 588px;
+    }
+    .step__four {
+        max-width: 639px;
+    }
+    .step__five {
+        max-width: 619px;
+    }
+    .step__three {
+        max-width: 750px;
+    }
+    .step__title{
+        width: 615px;
     }
 }
 @media(max-width: 1320px){
@@ -115,12 +128,32 @@
     .live__desc{
         max-width: 100%;
     }
+    .why .title__content{
+        margin-bottom: 22px;
+        text-align: center;
+    }
+    .why__inner{
+        align-items: center;
+    }
+    .why__img{
+        img{
+            width: 600px;
+        }
+    }
     .why__text{
-    font-size: 20px;
+        margin-top: 0;
+        font-size: 20px;
+        padding-right: 0;
     }
     .result__inner{
         display: grid;
+        justify-content: center;
         background: none;
+        margin-top: 20px;
+        gap: 30px;
+    }
+    .result__title{
+        line-height: 140%;
     }
     .result__info-one, .result__info-two {
         display: grid;
@@ -141,7 +174,7 @@
         font-size: 19px;
     }
     .result__info-one, .result__info-two {
-        height: 440px;
+        height: auto;
     }
     .result__inner .btn__test {
      display: grid;
@@ -178,9 +211,30 @@
     .result_box-two-pos-two{
         border-left: 10px solid #008F8E;
     }
+    .astrofinplan__description {
+       font-size: 20px;
+    }
+    .astrofinplan__img img {
+        width: 460px;
+    }
+    .step__inner {
+        background:none;
+    }
+    .step__plan-img{
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+    }
+    .step__card, .step__five, .step__four, .step__three, .step__title{
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 960px){
+    .container{
+        padding: 0 30px;
+    }
     br{
         display: none;
     }
@@ -205,6 +259,14 @@
         grid-row: 3;
         margin: 0 auto;
     }
+    .why__inner{
+        flex-direction: column;
+    }
+    .why__text{
+        p+p{
+            margin-top: 8px;
+         }
+    }
     .result_box-one, .result_box-two{
         max-width: 329px;
     }
@@ -216,10 +278,12 @@
         font-size: 16px;
     }
     .result__text {
-        font-size: 14px;
+        font-size: 15px;
+        line-height: 140%;
     }
     .subtitle{
         font-size: 18px;
+        line-height: 140%;
     }
     .result__box {
          box-shadow: none; 
@@ -234,6 +298,49 @@
     }
     .questions__subtext {
         display: none;
+    }
+    .astrofinplan{
+        .none{
+            display: none;
+        }
+        &__img{
+            text-align: center;
+            .title__content{
+                display: block;
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .astrofinplan__img img {
+        width: 570.82px;
+    }
+    .astrofinplan__description {
+        position: relative;
+        left: 0;
+        top: -95px;
+        p{
+            max-width: 707px;
+            line-height: 140%;
+        }
+    }
+    .step__image img{
+        height: 775px;
+    }
+    .step__inner{
+        margin-left: 0;
+        column-gap: 21px;
+        margin-top: 0;
+    }
+    .step__description{
+        font-size: 20px;
+        line-height: 140%;
+    }
+    .step__card + .step__card{
+        margin-top: 32px;
+    }
+    .live{
+        margin-bottom: 60px;
     }
 }
 @media(max-width: 770px){
@@ -250,19 +357,43 @@
             font-size: 42px;
             line-height: 120%;
         }
+        &__home{
+            font-size: 24px;
+        }
+    }
+    .subtitle{
+        margin-top: 13px;
+    }
+    .logo__txt{
+        br{
+            display: block;
+        }
+    }
+    .live__box{
+        margin-bottom: 29px;
+    }
+    .live__desc{
+        padding: 27px 43px;
+    }
+
+    .live__desc-text{
+        font-size: 18px;
+        line-height: 140%;
+    }
+    .btn__test{
+        padding: 18px 44px;
     }
     .home__info{
         margin-left: 0;
     }
     .home__info-list {
         margin: 24px 0 42px 40px;
+        li{
+            font-size: 20px;
+        }
     }
     .live__card-img{
      max-width: 600px;
-     height: 600px;
-    }
-    .why__inner{
-        flex-direction: column;
     }
     .astrofinplan .why__inner{
         display: grid;
@@ -271,13 +402,23 @@
         text-align: center;
         grid-column: 1;
     }
+    .astrofinplan__link{
+    &::after{
+        background-size: 20px;
+        height: 20px;
+        width: 20px;
+        bottom: 7px;
+    }}
+
     .why__text{
      font-size: 18px;
+     line-height: 140%;
+     max-width: 708px;
+
     }
     .why__img{
         img{
             max-width: 600px;
-            height: 600px;
         }
     }
     .astrofinplan__description{
@@ -285,11 +426,20 @@
     }
     .astrofinplan__img img {
         width: 571px;
-        height: 621px;
     }
-    
+    .step__title {
+        font-size: 20px;
+        line-height: 140%;
+    }
 }
-
+@media(max-width: 700px){
+    .result_box-one, .result_box-two{
+        width: 270px;
+    }
+    .step__description {
+        font-size: 18px;
+    }
+}
 @media(max-width: 670px){
     .btn{
         display: none;
@@ -298,21 +448,66 @@
         max-width: 230px;
     }
     .live__card-img{
-        max-width: 515px;
-        height: 515px;
+        max-width: 495px;
        }
+    .live__desc{
+        padding: 16px 23px;
+    }
     .live__img{
         width: 100px;
-        height: 100px;
     }
     .why__img{
         img{
             width: max-content;
-            height: 500px;
         }
     }
+    .astrofinplan__img img {
+        width: 389px;
+    }
+    .astrofinplan__description {
+        top: -75px;
+        p{
+            max-width: max-content;
+        }
+    }
+    .why__img{
+        img{
+            max-width: 428px;
+        }
+    }
+    .step__plan-img{
+        width: 100%;
+    }
+    .step__description{
+        font-size: 16px;
+    }
+}
+@media(max-width: 610px){
+    .result__inner{
+        column-gap: 0;
+        row-gap: 12px;
+    }
+    .result__info-one, .result__info-two{
+        grid-template-columns: 1fr;
+     
+    }
+    .result_box-one, .result_box-two {
+        max-width: 100%;
+        width: 100%;
+        height: 142px;
+    }
+    .result__inner .btn__test{
+        text-align: center;
+        width: 100%;
+        padding: 14px 36px;
+        font-size: 14px;
+    }
+
 }
 @media(max-width: 520px){
+    .container{
+        padding: 0 15px;
+    }
     .logo{
         width: 89px;
     }
@@ -321,6 +516,16 @@
         max-width: 328px;
         margin-bottom: 2px;
         margin-top: 25px;
+        &__content{
+            font-size: 26px;
+        }
+    }
+
+    .subtitle, .result__text{
+        font-size: 14px;
+    }
+    .result__title{
+        margin-bottom: 5px;
     }
     .header__logo {
         column-gap: 14px;
@@ -337,11 +542,15 @@
         margin: 13px 0 27px 40px;
         font-size: 16px;
         li{
-            &::marker{
-              font-size: 16px;;
-            }
+              font-size: 16px;
+            //   background-size: 26.67px;
+        }
+        .result__text {
+            font-size: 14px;
+            line-height: 140%;
         }
     }
+    
     .btn__test {
         display: block;
         text-align: center;
@@ -351,10 +560,26 @@
     }
     .live__box{
         grid-template-columns: 1fr;
+        row-gap: inherit;
+    }
+    .live__card{
+        display: flex;
+        column-gap: 17px;
+        width: 100%;
+        p{
+            text-align: left;
+            max-width: max-content;
+            font-size: 16px;
+        }
+    } 
+    .live__card-img{
+        max-width: 328px;
+       }
+    .live__img{
+        width: 60px;
     }
     .live__card-img{
         max-width: 328px;
-        height: 328px;
        }
     .live__card-img {
         grid-column: 1;
@@ -366,7 +591,6 @@
     .why__img{
         img{
             max-width: 328px;
-            height: 328px;
         }
     }
     .why__text{
@@ -382,15 +606,59 @@
             }
         }
     }
+    .astrofinplan__description {
+        font-size: 14px;
+    }
+    .astrofinplan__img img {
+        width: 308px;
+    }
+    .astrofinplan__link{
+        margin-top: 7px;
+        &::after{
+            background-size: 16px;
+            height: 16px;
+            width: 16px;
+            bottom: 9px;
+        }
+    }
+    .step__card + .step__card{
+        margin-top: 22px;
+    }
+    .step__title{
+        font-size: 16px;
+    }
+    .step__description{
+    font-size: 14px;
+    }
+    .step__image img{
+        height: auto;
+    }
+    .step__image .number{
+        display: none;
+        // width: 50px;
+    }
+    .step__image-number{
+        display: block;
+        margin-top: 16px;
+    }
+    .step__description{
+        max-width: 271px;
+    }
+    .live{
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 350px){
     .logo{
-        width: 75px;
+        width: 67px;
     }
     .logo__txt {
         font-size: 10px;
         max-width: 140px;
+    }
+    .live__card-img{
+        max-width: 260px;
     }
     .burger {
         width: 30px;
@@ -399,5 +667,36 @@
             width: 15px;
         }
     }
-
+    .why__img img {
+        max-width: 270px;
+    }
+    .astrofinplan__img img {
+        width: 260px;
+    }
+    .result__inner .btn__test{
+        padding: 9px 20px;
+    }
+    .result__title {
+        font-size: 14px;
+    }
+    .result__text {
+        font-size: 12px;
+        line-height: 120%;
+    }
+    .step {
+        .title__content{
+            font-size: 21px;
+        }
+    }
+    .step__card + .step__card {
+        margin-top: 27px;
+    }
+    .step__description {
+        font-size: 12px;
+    }
+}
+@media (max-width: 300px){
+    .step__card + .step__card {
+        margin-top: 11px;
+    }
 }
