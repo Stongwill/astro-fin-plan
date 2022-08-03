@@ -9,6 +9,9 @@
     .result__info-one, .result__info-two {
         height: 659px;
     }
+    .tarife__list-left{
+        flex: 0 0 49%;
+    }
 }
 @media(max-width: 1450px){
     .astrofinplan .why__inner{
@@ -44,6 +47,18 @@
     }
     .step__title{
         width: 615px;
+    }
+    .tarife__inner .download {
+        padding: 13px 25px;
+    }
+    .tarife__link + .tarife__link {
+        margin-left: 22px;
+    }
+    .tarife__box-title-desc .tarife__title-right {
+        margin-right: 25px;
+    }
+    .footer__readme {
+        width: 200px;
     }
 }
 @media(max-width: 1320px){
@@ -86,6 +101,22 @@
     }
     .questions__button-text {
         max-width: 593px;
+    }
+    .tarife__title, .tarife__list li {
+        font-size: 18px;
+    }
+    .tarife__list-left {
+        flex: 0 0 46%;
+    }
+    .tarife__inner .btn__test{
+        font-size: 14px;
+    }
+    .footer__course .footer__text {
+        width: 230px;
+    }
+    .footer__readme{
+        width: 225px;
+        margin-right: 0;
     }
 }
 @media(max-width: 1240px){
@@ -229,6 +260,176 @@
         max-width: 100%;
         width: 100%;
     }
+    .tarife__title, .tarife__list li {
+        font-size: 18px;
+    }
+    .tarife__box-title-desc {
+        flex-basis: 53%;
+    }
+    .tarife__list-left {
+        flex: 0 0 40%;
+    }
+    .tarife{
+        display: none;
+    }
+
+    .tarife__mobile{
+        display: block;
+        margin-bottom: 53px;
+        &-inner{
+            display: none;
+        }
+        .tarife__title{
+           font-size: 22px;
+           font-family: 'Gotham Pro Bold';
+        }
+        &-item{
+            margin-top: 26px;
+        }
+        &-box{
+         box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+         border-radius: 20px;
+         padding: 30px 40px;
+        }
+         .tarife__carusel{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 14px;
+         }
+         .tarife__list{
+            border: none;
+         }
+         .tarife__list-left, .tarife__list{
+             flex: inherit;
+             padding-top: 0;
+             margin-top: 0;
+         }
+
+         .tarife__mobile-input{
+             width: 0;
+             height: 0;
+             float: right;
+             appearance: none;
+             display: block;
+             cursor: pointer;
+             position: relative;
+             &::after{
+                 content: '';
+                 right: 0;
+                 bottom: -14px;
+                 width: 32px;
+                 height: 32px;
+                 position: absolute;
+                 background: url('./img/tarife__open.svg');
+                 background-size: 32px;
+             }
+             
+         &:checked {
+             &+.tarife__mobile-inner{
+                display: block;
+                border-top: 1px solid #E5E5EB;
+                padding-top: 18px;
+                margin-top: 17px;
+             }
+             &::after{
+             background: url('./img/tarife__close.svg');
+             background-size: 32px;
+         }
+     }
+         }
+         &-open-top{
+            display: flex;
+            justify-content: space-between;
+         }
+         &-open-bottom{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 112px;
+         }
+         .tarife__link .tarife__title {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        .btn__test{
+            font-size: 18px;
+        }
+     }
+     
+    .answer__img{
+        img{
+            width: 400px;
+        }
+    }
+    .footer__info {
+        margin-right: 38px;
+    }
+    .footer__course {
+        margin-right: 25px;
+    }
+    .footer__course .footer__text {
+        width: 250px;
+    }
+    .footer__confidentiality p {
+        max-width: 700px;
+    }
+    .footer__menu{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 1170px){
+    .answer__designer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 38px;
+
+    }
+    .footer__inner{
+        flex-direction: column;
+        padding-top: 35px;
+        margin-bottom: 34px;
+    }
+    .footer__navmenu{
+        margin-top: 37px;
+        justify-content: space-around;
+    }
+    .footer__info{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+        margin-left: -17px;
+    }
+    .footer__phone{
+        margin-top: 0;
+    }
+    .footer__course .footer__text{
+        width: 335px;
+    }
+    .footer__confidentiality .footer__confidentiality-link{
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .footer__confidentiality-bottom{
+        margin-top: 25px;
+    }
+    .footer__readme{
+        width: 280px;
+    }
+    .footer__phone{
+        column-gap: 13px;
+    }
+    .footer__company-link{
+        br{
+            display: block;
+        }
+        width: 183px;
+        font-size: 16px;
+        margin-left: 0;
+        a{
+            display: block;
+        }
+    }
 }
 
 @media (max-width: 960px){
@@ -293,6 +494,26 @@
         flex-direction: column;
         align-items: center;
     }
+    .questions__input {
+        width: 100%;
+    }
+    .questions__text{
+        max-width: 100%;
+        font-size: 20px;
+        margin-top: 13px;
+        margin-bottom: 19px;
+    }
+    .questions__social{
+        padding-right: 0;
+    }
+    .questions__button button {
+        padding: 18px 75px;
+        font-size: 18px;
+    }
+    .questions__link{
+        justify-content: center;
+        margin-bottom: 21px;
+    }
     .question__box {
         padding: 34px 30px 30px 30px;
     }
@@ -341,6 +562,25 @@
     }
     .live{
         margin-bottom: 60px;
+    }
+    .answer__item + .answer__item {
+        margin-top: 20px;
+    }
+    .answer__title{
+        font-size: 22px;
+    }
+    .answer__text {
+        line-height: 140%;
+        font-size: 18px;
+    }
+    .answer__img img {
+        width: 300px;
+    }
+    .input__list{
+        align-items: center;
+    }
+    .questions__form {
+        width: 462px;
     }
 }
 @media(max-width: 770px){
@@ -431,6 +671,56 @@
         font-size: 20px;
         line-height: 140%;
     }
+    .answer__img {
+        display: none;
+    }
+    .answer__item {
+        max-width: 717px;
+        padding-left: 57px;
+    }
+    .answer__title {
+        font-size: 20px;
+        line-height: 140%;
+    }
+    .answer__text{
+        padding-top: 0;
+    }
+    .answer__input::before {
+        content: "";
+        left: -57px;
+        width: 39px;
+        height: 39px;
+        background-size: 39px;
+    }
+    .answer__input:checked::before {
+        background-size: 39px;
+    }
+    .answer__item + .answer__item {
+        margin-top: 16px;
+    }
+    .answer__inner {
+        margin-top: 20px;
+    }
+    .answer {
+        margin-bottom: 52px;
+    }
+    .questions{
+        margin-bottom: 57px;
+    }
+    .questions__text{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .questions__input{
+        padding: 43px 28px 34px 27px;
+    }
+    .questions__link a {
+        font-size: 20px;
+    }
+    .footer__navmenu{
+        margin-top: 37px;
+        justify-content: space-between;
+    }
 }
 @media(max-width: 700px){
     .result_box-one, .result_box-two{
@@ -438,6 +728,26 @@
     }
     .step__description {
         font-size: 18px;
+    }
+    .input__name, .questions__form {
+        width: 100%;
+    }
+    .question__box .title__content, .questions__text {
+        text-align: center;
+    }
+    .footer__info{
+        flex-direction: column;
+        row-gap: 18px;
+    }
+    .footer__navmenu {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    .tarife__mobile .tarife__title{
+        font-size: 20px;
+    }
+    .tarife__title, .tarife__list li{
+        font-size: 16px;
     }
 }
 @media(max-width: 670px){
@@ -647,6 +957,167 @@
     .live{
         margin-bottom: 30px;
     }
+    .answer {
+        margin-bottom: 16px;
+    }
+    .answer__input::before {
+        content: "";
+        left: -54px;
+        width: 36px;
+        height: 36px;
+        background-size: 36px;
+    }
+    .answer__input:checked::before {
+        background-size: 36px;
+    }
+    .answer__title {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .answer__text{
+        font-size: 14px;
+    }
+    .answer__item + .answer__item {
+        margin-top: 12px;
+    }
+    .answer__inner {
+        margin-top: 12px;
+        flex-direction: column;
+    }
+    .answer__item {
+        padding-left: 54px;
+    }
+    .answer__img{
+        display: block;
+        order: 2;
+        padding-right: 0;
+        text-align: center;
+        img{
+            width: 250px;
+        }
+    }
+    .questions{
+        margin-bottom: 29px;
+    }
+    .question__box {
+        padding: 18px 16px 16px 16px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
+    }
+    .questions__text{
+        font-size: 16px;
+        margin-top: 17px;
+    }
+    .questions__link a{
+        font-size: 18px;
+    }
+    .questions__input{
+        padding: 21px 23px 17px 23px;
+    }
+    .questions__form {
+        height: auto;
+        padding: 8px 12px;
+    }
+    .questions__button {
+        margin-top: 17px;
+        row-gap: 19px;
+    }
+    .questions__input-title{
+        font-size: 18px;
+    }
+    .questions__button-text{
+        font-size: 10px;
+    }
+    .questions__button button {
+        padding: 12px 51px;
+        font-size: 14px;
+    }
+    .input__text {
+        font-size: 14px;
+        line-height: 13px;
+        margin-bottom: 8px;
+    }
+    .footer .logo__txt {
+        font-size: 14px;
+        max-width: 182px;
+    }
+    .footer__company-link a {
+       font-size: 14px;
+    }
+    .footer__social-link-whatsapp{
+        padding: 7px;
+    }
+     .footer__social-link{
+        padding: 2px;
+    }
+    .footer__info{
+        margin-left: 0;
+    }
+    .footer__title{
+        font-size: 16px;
+        line-height: 15px;
+        margin-bottom: 16px;
+    }
+    .footer__confidentiality-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__confidentiality-bottom .footer__text + .footer__text {
+        margin-top: 16px;
+    }
+    .footer__text{
+        font-size: 14px;
+    }
+    .footer__navmenu{
+        margin-top: 27px;
+    }
+    .footer__inner {
+        padding-top: 21px;
+        margin-bottom: 20px;
+    }
+    .tarife__mobile .tarife__list-left, .tarife__mobile .tarife__list {
+    max-width: 235px;
+    height: 235px;
+    margin-bottom: 15px;
+        }
+    .tarife__mobile .tarife__title{
+        font-size: 16px;
+        max-width: 177px;
+    }
+    .tarife__title, .tarife__list li{
+        font-size: 12px;
+        img{
+            width: 22px;
+        }
+    }
+    .tarife__mobile .tarife__mobile-input:checked::after,
+    .tarife__mobile .tarife__mobile-input::after{
+        width: 24px;
+        height: 24px;
+        background-size: 24px;
+        background-repeat: no-repeat;
+        bottom: -21px;
+    }
+    .tarife__link{
+        a{
+            font-size: 14px;
+            padding: 14px 36px;
+        }
+    }
+    .tarife__mobile .tarife__link .tarife__title{
+        margin-bottom: 12px;
+    }
+    .tarife__mobile-open-bottom {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 46px;
+    }
+    .tarife__mobile .btn__test {
+        font-size: 14px;
+    }
+    .tarife__mobile .tarife__link .tarife__title {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 350px){
@@ -694,9 +1165,46 @@
     .step__description {
         font-size: 12px;
     }
+    .questions__link{
+        column-gap: 10px;
+       a{
+        font-size: 15px;
+        &> img {
+            width: 35px;
+        }
+       }
+    }
+    .footer__course .footer__text {
+        width: 265px;
+    }
+    .footer__readme {
+        width: 260px;
+    }
+    .tarife__mobile .tarife__title{
+        font-size: 14px;
+        bottom: -26px;
+    }
+    .tarife__title, .tarife__list li {
+        font-size: 11px;
+    }
+
+    .tarife__mobile .btn__test {
+        font-size: 15px;
+        padding: 13px 15px;
+    }
+    .tarife__mobile-open-top {
+        padding-bottom: 13px;
+    }
 }
 @media (max-width: 300px){
     .step__card + .step__card {
         margin-top: 11px;
+    } 
+    .footer__company-link a {
+        font-size: 11px;
+    }
+    .tarife__mobile .tarife__title{
+        font-size: 13px;
+        bottom: -26px;
     }
 }
