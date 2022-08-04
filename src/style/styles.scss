@@ -20,14 +20,20 @@ body{
     font-size: 24px;
     // line-height: 140%;
     color: #000000;
+    &.noscroll{
+        overflow: hidden;
+    }
 }
 input{
     outline: none;
 }
+button{
+    border: none;
+    background: transparent;
+}
 .header{
     background: url('./img/home-bg.jpg') no-repeat;
     background-size: cover;
-
     height: 100vh;
 }
 
@@ -88,7 +94,9 @@ input{
     align-items: center;
     column-gap: 16px;
 }
-
+.sidebar{
+    display: none;
+}
 .title{
     text-transform: uppercase;
     max-width: 893px;

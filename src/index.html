@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AstoFinPlan</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
   </head>
   <body>
     <header class="header">
@@ -28,15 +29,20 @@
           </nav>
           <div class="social">
             <a href="#" class="btn">Оставить заявку</a>
-            <a href="#" class="social__phone"><img src="../src/img/whatsapp.png" alt="whatsapp" /></a>
-            <a href="#" class="social__phone"><img src="../src/img/telegram.png" alt="telegram" /></a>
-            <div class="burger">
+            <div class="social__messanger">
+              <a href="#" class="social__phone"
+                ><img src="../src/img/whatsapp.png" alt="whatsapp"
+              /></a>
+              <a href="#" class="social__phone"
+                ><img src="../src/img/telegram.png" alt="telegram"
+              /></a>
+            </div>
+            <div class="burger" id="burger">
               <span></span>
               <span></span>
               <span></span>
             </div>
           </div>
-
         </div>
         <h1 class="title">Финансовый план, который улучшит вашу жизнь</h1>
         <div class="home__info">
@@ -49,6 +55,27 @@
             <li><strong>Как создать капитал?</strong></li>
           </ul>
           <a href="#" class="btn__test">Пройдите тест и получите бонус!</a>
+        </div>
+      </div>
+      <div class="sidebar" id="sidebar">
+        <a href="#header" class="sidebar__area"></a>
+        <div class="sidebar__body">
+          <button class="closed" id="closed">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7 5.586L1.414 0L0 1.414L5.585 7L0 12.586L1.414 14L7 8.414L12.586 14L13.999 12.586L8.414 7L13.999 1.414L12.586 0L7 5.586Z"
+                fill="black"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -117,7 +144,7 @@
         </div>
       </div>
     </section>
-  
+
     <section class="why">
       <div class="container">
         <div class="why__inner">
@@ -130,9 +157,9 @@
             </p>
             <p>
               Вот тут на помощь и приходят
-              <strong>методы финансовой астрологии</strong>, которые я
-              использую при создании вашего «Астрофинплана» наряду с
-              классическими способами финансового планирования.
+              <strong>методы финансовой астрологии</strong>, которые я использую
+              при создании вашего «Астрофинплана» наряду с классическими
+              способами финансового планирования.
             </p>
           </div>
           <div class="why__img">
@@ -141,7 +168,7 @@
         </div>
       </div>
     </section>
-     
+
     <section class="astrofinplan">
       <div class="container container__astrofinplan">
         <div class="why__inner">
@@ -153,7 +180,9 @@
             />
           </div>
           <div class="astrofinplan__description">
-            <h2 class="title__content none">Кто я и что такое «Астрофинплан»?</h2>
+            <h2 class="title__content none">
+              Кто я и что такое «Астрофинплан»?
+            </h2>
             <p>
               Меня зовут <strong> Анна Воробьева </strong>, я финансовый
               советник, коуч и астролог.
@@ -181,7 +210,7 @@
         </div>
       </div>
     </section>
-   
+
     <section class="result">
       <div class="container result__container">
         <div class="result__box">
@@ -268,7 +297,7 @@
         </div>
       </div>
     </section>
- 
+
     <section class="step">
       <div class="container">
         <h2 class="title__content">
@@ -277,15 +306,18 @@
         <div class="step__inner">
           <div class="step__image">
             <img class="number" src="./img/numbers.png" alt="Шаги" />
-            <img class="step__image-number" src="./img/number-mobile.png" alt="Шаги">
+            <img
+              class="step__image-number"
+              src="./img/number-mobile.png"
+              alt="Шаги"
+            />
           </div>
           <div class="step__info">
             <div class="step__card">
               <h4 class="step__title">Первый шаг</h4>
-              <p class="step__description ">
+              <p class="step__description">
                 Вы оставляете заявку на сайте или пишите мне в любом удобном
-                мессенджере. Я задаю 
-                свои уточняющие вопросы по вашему запросу.
+                мессенджере. Я задаю свои уточняющие вопросы по вашему запросу.
               </p>
             </div>
             <div class="step__card">
@@ -296,17 +328,17 @@
               </p>
             </div>
             <div class="step__card">
-              <h4 class="step__title ">Подготовка «Астродиагностики»</h4>
+              <h4 class="step__title">Подготовка «Астродиагностики»</h4>
               <p class="step__description step__three">
-                Я анализирую все аспекты вашего финансового потенциалы 
-                и способы увеличения дохода астрологическими методами.
+                Я анализирую все аспекты вашего финансового потенциалы и способы
+                увеличения дохода астрологическими методами.
               </p>
             </div>
             <div class="step__card">
               <h4 class="step__title">Встреча по Skype</h4>
               <p class="step__description step__four">
-                Рассказываю вам результаты «Астродиагностики» и
-                отвечаю на ваши вопросы. Длительность встречи 1,5–2 часа.
+                Рассказываю вам результаты «Астродиагностики» и отвечаю на ваши
+                вопросы. Длительность встречи 1,5–2 часа.
               </p>
             </div>
             <div class="step__card">
@@ -314,17 +346,21 @@
                 Отправляю вам pdf файл (7–10 страниц) и остаюсь на связи
               </h4>
               <p class="step__description step__five">
-                После встречи отправляю вам pdf файл с информацией, о 
-                которой рассказывала на встрече и отвечаю на вопросы, 
-                которые возникли после консультации.
+                После встречи отправляю вам pdf файл с информацией, о которой
+                рассказывала на встрече и отвечаю на вопросы, которые возникли
+                после консультации.
               </p>
             </div>
           </div>
         </div>
-        <img class="step__plan-img" src="./img/plan.png" alt="Как проходит составление «Астродиагностики»?">
+        <img
+          class="step__plan-img"
+          src="./img/plan.png"
+          alt="Как проходит составление «Астродиагностики»?"
+        />
       </div>
     </section>
-     
+
     <section class="tarife">
       <div class="container tarife__container">
         <div class="tarife__inner">
@@ -333,10 +369,10 @@
               <h2 class="title__content">Тарифы</h2>
             </div>
             <div class="tarife__box-title-desc">
-            <h5 class="tarife__title tarife__title-right">«Я сам»</h5>
-            <h5 class="tarife__title">«Астродиагностика»</h5>
-            <h5 class="tarife__title">«Астрофинплан»</h5>
-          </div>
+              <h5 class="tarife__title tarife__title-right">«Я сам»</h5>
+              <h5 class="tarife__title">«Астродиагностика»</h5>
+              <h5 class="tarife__title">«Астрофинплан»</h5>
+            </div>
           </div>
 
           <div class="tarife__box-desc">
@@ -378,8 +414,8 @@
               <li><img src="./img/list.png" alt="yes" /></li>
               <li><img src="./img/list.png" alt="yes" /></li>
             </ul>
-            </div>
-            <div class="tarife__box-price">
+          </div>
+          <div class="tarife__box-price">
             <div class="tarife__link">
               <h5 class="tarife__title">Бесплатно</h5>
               <a href="#" class="btn__test"
@@ -390,138 +426,152 @@
               <h5 class="tarife__title">5000 &#8381;</h5>
               <a href="#" class="btn__test download">Оставить заявку</a>
             </div>
-   
+
             <div class="tarife__link">
               <h5 class="tarife__title">15 000 &#8381;</h5>
               <a href="#" class="btn__test download">Оставить заявку</a>
-          </div>
-        </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-
-
     <section class="tarife__mobile">
       <div class="container">
         <div class="tarife__mobile-box">
-        <h2 class="title__content">Тарифы</h2>
-        <div class="tarife__mobile-list">
-          <div class="tarife__mobile-item">
-            <label for="tarife_1" class="tarife__title"
-              >«Я сам»
-            </label>
-            <input type="checkbox" class="tarife__mobile-input" id="tarife_1" />
-            <div class="tarife__mobile-inner">
-              <div class="tarife__mobile-open-top">
-            <ul class="tarife__list tarife__list-left">
-              <li>Курс «Как планировать финансы в период нестабильности»</li>
-              <li>Количество онлайн встреч</li>
-              <li>«Астродиагностика» в письменном виде (pdf)</li>
-              <li>Рекомендации по увеличению дохода</li>
-              <li>Рекомендации по созданию и сохранению капитала</li>
-              <li>
-                Рекомендации по финансовым инструментам для создания капитала
-              </li>
-              <li>«Астрофинплан» в письменном виде (pdf)</li>
-            </ul>
-            <ul class="tarife__list">
-              <li><img src="./img/list.png" alt="yes" /></li>
-              <li><img src="./img/list-no.png" alt="no" /></li>
-              <li><img src="./img/list-no.png" alt="no" /></li>
-              <li><img src="./img/list-no.png" alt="no" /></li>
-              <li><img src="./img/list-no.png" alt="no" /></li>
-              <li><img src="./img/list-no.png" alt="no" /></li>
-              <li><img src="./img/list-no.png" alt="no" /></li>
-            </ul>
-          </div>
-            <div class="tarife__mobile-open-bottom">
-            <div class="tarife__link">
-              <h5 class="tarife__title">Бесплатно</h5>
-              <a href="#" class="btn__test"
-                >Скачать <img src="./img/download.png" alt="download"
-              /></a>
-            </div>
-          </div>
-          </div>
-          </div>
-          <div class="tarife__mobile-item">
-       
-            <label for="tarife_2" class="tarife__title"
-              >«Астродиагностика»
-            </label>
-            <input type="checkbox" class="tarife__mobile-input" id="tarife_2" />
-  
-            <div class="tarife__mobile-inner">
-              <div class="tarife__mobile-open-top">
-            <ul class="tarife__list tarife__list-left">
-              <li>Курс «Как планировать финансы в период нестабильности»</li>
-              <li>Количество онлайн встреч</li>
-              <li>«Астродиагностика» в письменном виде (pdf)</li>
-              <li>Рекомендации по увеличению дохода</li>
-              <li>Рекомендации по созданию и сохранению капитала</li>
-              <li>
-                Рекомендации по финансовым инструментам для создания капитала
-              </li>
-              <li>«Астрофинплан» в письменном виде (pdf)</li>
-            </ul>
-            <ul class="tarife__list">
-              <li><img src="./img/list.png" alt="yes" /></li>
-              <li>1</li>
-              <li><img src="./img/list.png" alt="no" /></li>
-              <li><img src="./img/list.png" alt="no" /></li>
-              <li><img src="./img/list.png" alt="no" /></li>
-              <li><img src="./img/list-no.png" alt="no" /></li>
-              <li><img src="./img/list-no.png" alt="no" /></li>
-            </ul>
-            </div>
-            <div class="tarife__mobile-open-bottom">
-              <div class="tarife__link">
-                <h5 class="tarife__title">5000 &#8381;</h5>
-                <a href="#" class="btn__test download">Оставить заявку</a>
+          <h2 class="title__content">Тарифы</h2>
+          <div class="tarife__mobile-list">
+            <div class="tarife__mobile-item">
+              <label for="tarife_1" class="tarife__title">«Я сам» </label>
+              <input
+                type="checkbox"
+                class="tarife__mobile-input"
+                id="tarife_1"
+              />
+              <div class="tarife__mobile-inner">
+                <div class="tarife__mobile-open-top">
+                  <ul class="tarife__list tarife__list-left">
+                    <li>
+                      Курс «Как планировать финансы в период нестабильности»
+                    </li>
+                    <li>Количество онлайн встреч</li>
+                    <li>«Астродиагностика» в письменном виде (pdf)</li>
+                    <li>Рекомендации по увеличению дохода</li>
+                    <li>Рекомендации по созданию и сохранению капитала</li>
+                    <li>
+                      Рекомендации по финансовым инструментам для создания
+                      капитала
+                    </li>
+                    <li>«Астрофинплан» в письменном виде (pdf)</li>
+                  </ul>
+                  <ul class="tarife__list">
+                    <li><img src="./img/list.png" alt="yes" /></li>
+                    <li><img src="./img/list-no.png" alt="no" /></li>
+                    <li><img src="./img/list-no.png" alt="no" /></li>
+                    <li><img src="./img/list-no.png" alt="no" /></li>
+                    <li><img src="./img/list-no.png" alt="no" /></li>
+                    <li><img src="./img/list-no.png" alt="no" /></li>
+                    <li><img src="./img/list-no.png" alt="no" /></li>
+                  </ul>
+                </div>
+                <div class="tarife__mobile-open-bottom">
+                  <div class="tarife__link">
+                    <h5 class="tarife__title">Бесплатно</h5>
+                    <a href="#" class="btn__test"
+                      >Скачать <img src="./img/download.png" alt="download"
+                    /></a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          </div>
-          <div class="tarife__mobile-item">
-     
-            <label for="tarife_3" class="tarife__title"
-              >«Астрофинплан»
-            </label>
-            <input type="checkbox" class="tarife__mobile-input" id="tarife_3" />
-    
-            <div class="tarife__mobile-inner">
-              <div class="tarife__mobile-open-top">
-            <ul class="tarife__list tarife__list-left">
-              <li>Курс «Как планировать финансы в период нестабильности»</li>
-              <li>Количество онлайн встреч</li>
-              <li>«Астродиагностика» в письменном виде (pdf)</li>
-              <li>Рекомендации по увеличению дохода</li>
-              <li>Рекомендации по созданию и сохранению капитала</li>
-              <li>
-                Рекомендации по финансовым инструментам для создания капитала
-              </li>
-              <li>«Астрофинплан» в письменном виде (pdf)</li>
-            </ul>
-            <ul class="tarife__list">
-              <li><img src="./img/list.png" alt="yes" /></li>
-              <li>3</li>
-              <li><img src="./img/list.png" alt="yes" /></li>
-              <li><img src="./img/list.png" alt="yes" /></li>
-              <li><img src="./img/list.png" alt="yes" /></li>
-              <li><img src="./img/list.png" alt="yes" /></li>
-              <li><img src="./img/list.png" alt="yes" /></li>
-            </ul>
+            <div class="tarife__mobile-item">
+              <label for="tarife_2" class="tarife__title"
+                >«Астродиагностика»
+              </label>
+              <input
+                type="checkbox"
+                class="tarife__mobile-input"
+                id="tarife_2"
+              />
+
+              <div class="tarife__mobile-inner">
+                <div class="tarife__mobile-open-top">
+                  <ul class="tarife__list tarife__list-left">
+                    <li>
+                      Курс «Как планировать финансы в период нестабильности»
+                    </li>
+                    <li>Количество онлайн встреч</li>
+                    <li>«Астродиагностика» в письменном виде (pdf)</li>
+                    <li>Рекомендации по увеличению дохода</li>
+                    <li>Рекомендации по созданию и сохранению капитала</li>
+                    <li>
+                      Рекомендации по финансовым инструментам для создания
+                      капитала
+                    </li>
+                    <li>«Астрофинплан» в письменном виде (pdf)</li>
+                  </ul>
+                  <ul class="tarife__list">
+                    <li><img src="./img/list.png" alt="yes" /></li>
+                    <li>1</li>
+                    <li><img src="./img/list.png" alt="no" /></li>
+                    <li><img src="./img/list.png" alt="no" /></li>
+                    <li><img src="./img/list.png" alt="no" /></li>
+                    <li><img src="./img/list-no.png" alt="no" /></li>
+                    <li><img src="./img/list-no.png" alt="no" /></li>
+                  </ul>
+                </div>
+                <div class="tarife__mobile-open-bottom">
+                  <div class="tarife__link">
+                    <h5 class="tarife__title">5000 &#8381;</h5>
+                    <a href="#" class="btn__test download">Оставить заявку</a>
+                  </div>
+                </div>
               </div>
-              <div class="tarife__mobile-open-bottom">
-                <div class="tarife__link">
-                  <h5 class="tarife__title">15 000 &#8381;</h5>
-                  <a href="#" class="btn__test download">Оставить заявку</a>
+            </div>
+            <div class="tarife__mobile-item">
+              <label for="tarife_3" class="tarife__title"
+                >«Астрофинплан»
+              </label>
+              <input
+                type="checkbox"
+                class="tarife__mobile-input"
+                id="tarife_3"
+              />
+
+              <div class="tarife__mobile-inner">
+                <div class="tarife__mobile-open-top">
+                  <ul class="tarife__list tarife__list-left">
+                    <li>
+                      Курс «Как планировать финансы в период нестабильности»
+                    </li>
+                    <li>Количество онлайн встреч</li>
+                    <li>«Астродиагностика» в письменном виде (pdf)</li>
+                    <li>Рекомендации по увеличению дохода</li>
+                    <li>Рекомендации по созданию и сохранению капитала</li>
+                    <li>
+                      Рекомендации по финансовым инструментам для создания
+                      капитала
+                    </li>
+                    <li>«Астрофинплан» в письменном виде (pdf)</li>
+                  </ul>
+                  <ul class="tarife__list">
+                    <li><img src="./img/list.png" alt="yes" /></li>
+                    <li>3</li>
+                    <li><img src="./img/list.png" alt="yes" /></li>
+                    <li><img src="./img/list.png" alt="yes" /></li>
+                    <li><img src="./img/list.png" alt="yes" /></li>
+                    <li><img src="./img/list.png" alt="yes" /></li>
+                    <li><img src="./img/list.png" alt="yes" /></li>
+                  </ul>
+                </div>
+                <div class="tarife__mobile-open-bottom">
+                  <div class="tarife__link">
+                    <h5 class="tarife__title">15 000 &#8381;</h5>
+                    <a href="#" class="btn__test download">Оставить заявку</a>
+                  </div>
+                </div>
               </div>
-              </div>
-          </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -573,7 +623,6 @@
             <div class="answer__item">
               <label for="faq_3" class="answer__title"
                 >А что делать, если у меня много запросов?
-                
               </label>
               <input type="checkbox" class="answer__input" id="faq_3" />
               <p class="answer__text">
@@ -615,7 +664,7 @@
         </div>
       </div>
     </section>
- 
+
     <section class="questions">
       <div class="container tarife__container">
         <div class="question__box">
@@ -637,11 +686,11 @@
               <div class="input__list">
                 <div class="input__name">
                   <p class="input__text">Ваше имя</p>
-                  <input type="text" class="questions__form" maxlength="15"/>
+                  <input type="text" class="questions__form" maxlength="15" />
                 </div>
                 <div class="input__name">
                   <p class="input__text">Телефон</p>
-                  <input type="text" class="questions__form" maxlength="12"/>
+                  <input type="text" class="questions__form" maxlength="12" />
                 </div>
               </div>
               <div class="questions__button">
@@ -654,6 +703,24 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="popup__form-mobile" id="popup__form-mobile">
+          <button class="closed" id="closed">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7 5.586L1.414 0L0 1.414L5.585 7L0 12.586L1.414 14L7 8.414L12.586 14L13.999 12.586L8.414 7L13.999 1.414L12.586 0L7 5.586Z"
+                fill="black"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -670,9 +737,17 @@
             </div>
             <div class="footer__phone">
               <a href="#"
-                ><img src="img/footer_whatsapp.svg" alt="whatsapp" class="footer__social-link footer__social-link-whatsapp"
+                ><img
+                  src="img/footer_whatsapp.svg"
+                  alt="whatsapp"
+                  class="footer__social-link footer__social-link-whatsapp"
               /></a>
-              <a href="#" ><img src="img/telegram.svg" alt="telegam" class="footer__social-link" /></a>
+              <a href="#"
+                ><img
+                  src="img/telegram.svg"
+                  alt="telegam"
+                  class="footer__social-link"
+              /></a>
               <div class="footer__company-link">
                 <a href="tel:+79652451605">Тел. +7 965 245 1605</a>
                 <a href="mailto:info@yandex.ru" class="mail"
@@ -682,56 +757,55 @@
             </div>
           </div>
           <div class="footer__navmenu">
-
-
-          <div class="answer__designer">
-          <div class="footer__course">
-            <h3 class="footer__title">Бесплатный курс</h3>
-            <a href="#" class="footer__text"
-              >Онлайн курс «Как планировать финансы в период нестабильности»</a
-            >
+            <div class="answer__designer">
+              <div class="footer__course">
+                <h3 class="footer__title">Бесплатный курс</h3>
+                <a href="#" class="footer__text"
+                  >Онлайн курс «Как планировать финансы в период
+                  нестабильности»</a
+                >
+              </div>
+              <div class="footer__readme">
+                <h3 class="footer__title">Читайте</h3>
+                <a href="#" class="footer__text">Название статьи один </a>
+                <a href="#" class="footer__text"> Статьи два, название</a>
+                <a href="#" class="footer__text"> Ссылка на статью </a>
+                <a href="#" class="footer__text"> Заголовок статьи</a>
+                <a href="#" class="footer__text">Важный материал или статья</a>
+              </div>
+            </div>
+            <div class="footer__navmenu-link">
+              <div class="footer__menu">
+                <h3 class="footer__title">Меню</h3>
+                <a href="#" class="footer__text">Главная </a>
+                <a href="#" class="footer__text"> Отзывы </a>
+                <a href="#" class="footer__text"> Статьи</a>
+                <a href="#" class="footer__text"> Услуги </a>
+                <a href="#" class="footer__text"> Обо мне</a>
+              </div>
+              <div class="footer__tips">
+                <h3 class="footer__title">Советы</h3>
+                <a href="#" class="footer__text vk">ВКонтакте</a>
+                <a href="#" class="footer__text telegram"> Telegram </a>
+                <a href="#" class="footer__text instagram"> Instagram</a>
+              </div>
+            </div>
           </div>
-          <div class="footer__readme">
-            <h3 class="footer__title">Читайте</h3>
-            <a href="#" class="footer__text">Название статьи один </a>
-            <a href="#" class="footer__text"> Статьи два, название</a>
-            <a href="#" class="footer__text"> Ссылка на статью </a>
-            <a href="#" class="footer__text"> Заголовок статьи</a>
-            <a href="#" class="footer__text">Важный материал или статья</a>
-          </div>
-        </div>
-        <div class="footer__navmenu-link">
-          <div class="footer__menu">
-            <h3 class="footer__title">Меню</h3>
-            <a href="#" class="footer__text">Главная </a>
-            <a href="#" class="footer__text"> Отзывы </a>
-            <a href="#" class="footer__text"> Статьи</a>
-            <a href="#" class="footer__text"> Услуги </a>
-            <a href="#" class="footer__text"> Обо мне</a>
-          </div>
-          <div class="footer__tips">
-            <h3 class="footer__title">Советы</h3>
-            <a href="#" class="footer__text vk">ВКонтакте</a>
-            <a href="#" class="footer__text telegram"> Telegram </a>
-            <a href="#" class="footer__text instagram"> Instagram</a>
-          </div>
-        </div>
-      </div>
         </div>
         <div class="footer__confidentiality">
           <div class="footer__confidentiality-link">
             <p href="#" class="footer__text">
               © 2022 Анна Воробьева. Все права защищены. Использовать материалы
-              сайта запрещено <br> ИП Воробьева Анна Юрьевна. ИНН 503604003412 / ОГРН
-              322508100028997
+              сайта запрещено <br />
+              ИП Воробьева Анна Юрьевна. ИНН 503604003412 / ОГРН 322508100028997
             </p>
             <div class="footer__confidentiality-bottom">
-            <a href="#" class="footer__text"> Политика конфиденциальности </a>
-            <a href="#" class="footer__text"> Договор-оферта </a>
-          </div>
+              <a href="#" class="footer__text"> Политика конфиденциальности </a>
+              <a href="#" class="footer__text"> Договор-оферта </a>
+            </div>
           </div>
         </div>
       </div>
-    </footer> 
+    </footer>
   </body>
 </html>
