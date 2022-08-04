@@ -4,60 +4,55 @@ import "./index.scss";
 const burger = document.querySelector("#burger");
 const sideBar = document.querySelector("#sidebar");
 const sideBarBody = document.querySelector(".sidebar__body");
-const menu = document.querySelector(".header__menu");
-const social = document.querySelector(".social__messanger");
+const menu = document.querySelector(".header__menu").cloneNode(1);
+const social = document.querySelector(".social__messanger").cloneNode(1);
 const body = document.body;
-const btnRedirect = document.querySelector('.btn').cloneNode(1);
-const close = document.querySelectorAll('#closed');
+const btnRedirect = document.querySelector(".btn").cloneNode(1);
+const close = document.querySelector(".closed");
 const phone = document.querySelector(".footer__company-link");
-const formPopup = document.querySelector('#popup__form-mobile');
-const popup = document.querySelector('.questions__input').cloneNode(1);
+const formPopup = document.querySelector("#popup__form-mobile");
+const popup = document.querySelector(".questions__input").cloneNode(1);
 
 burger.addEventListener("click", openSideBar);
-btnRedirect.addEventListener('click', popupForm);
+btnRedirect.addEventListener("click", popupForm);
+close.addEventListener("click", btnClose);
 
 function openSideBar(e) {
   e.preventDefault();
   sideBar.classList.toggle("open");
   body.classList.toggle("noscroll");
+  sideBar.addEventListener("click", (e) => {
+    if (!e.target.closest(".sidebar__body")) {
+      sideBar.classList.remove("open");
+      body.classList.remove("noscroll");
+    }
+  });
 
-  sideBarBody.appendChild(menu);
-  sideBarBody.appendChild(social);
-  sideBarBody.appendChild(phone);
-  sideBarBody.appendChild(btnRedirect);
-    btnRedirect.addEventListener('click', (e) => {
-        e.preventDefault();
-        sideBarBody.classList.remove("open");
-    })
-}
-
-
-// if(close.length > 0){
-//     for(let i=0; i< close.length; i++){
-//         const el = close[i];
-//         el.addEventListener('click', (e) => {
-//             close(el.closest('.popup'));
-//             e.preventDefault();
-//         })
-//     }
-// }
-
-function btnClose(e){
+  sideBarBody.append(menu, social, phone, btnRedirect);
+  btnRedirect.addEventListener("click", (e) => {
     e.preventDefault();
-    sideBar.classList.remove("open");
-    body.classList.remove("noscroll");
-    formPopup.classList.remove("open-popup");
-  
+    sideBarBody.classList.remove("open");
+  });
 }
 
-function popupForm(e){
-    e.preventDefault();
-    sideBar.classList.remove("open");
-    formPopup.classList.toggle("open-popup");
-    formPopup.appendChild(popup);
-    btnClose();
+
+function btnClose(e) {
+  e.preventDefault();
+  sideBar.classList.remove("open");
+  body.classList.remove("noscroll");
+  // formPopup.classList.remove("open-popup");
 }
 
-close.addEventListener('click', btnClose);
+function popupForm(e) {
+  e.preventDefault();
+  sideBar.classList.toggle("open");
+  formPopup.classList.toggle("open-popup");
+  formPopup.append(popup, close);
+  formPopup.addEventListener("click", (e) => {
+   if(!e.target.closest('.questions__input')){
+      formPopup.classList.remove("open-popup");
+      body.classList.remove("noscroll");
+  }
+  });
 
-
+}

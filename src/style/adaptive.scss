@@ -148,7 +148,7 @@
         &__body{
         width: 72%;
         background: #FFFFFF;
-        height: 55vh;
+        min-height: 55vh;
         margin-left: auto;
         padding: 9px 10px 24px 24px;
         }
@@ -221,19 +221,24 @@
     }
     .open-popup{
         top: 0;
-        padding: 50% 16px;
-        .closed{
-            float: right;
-            padding-top: 14px;
-            padding-right: 15px;
-        }
+        // padding: 50% 16px;
+
         .questions__input{
-            height: 52.5vh;
+            position: relative;
+            min-height: 52.5vh;
             background: #FFFFFF;
+            margin: 55% auto 0;
             &-title{
                 color: #000;
                 font-size: 22px;
             }
+        }
+        .closed{
+            position: absolute;
+            right: 0;
+            top: 30%;
+            padding-top: 14px;
+            padding-right: 15px;
         }
         .input__text{
             color: #76767A; 
