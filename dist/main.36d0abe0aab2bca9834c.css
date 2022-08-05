@@ -1,0 +1,353 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+@font-face{font-family:"Gotham Pro Bold";src:url(fonts/GothamPro-Bold.eot);src:local("Gotham Pro Bold"),local("GothamPro-Bold"),url(fonts/GothamPro-Bold.eot?#iefix) format("embedded-opentype"),url(fonts/GothamPro-Bold.woff) format("woff"),url(fonts/GothamPro-Bold.ttf) format("truetype");font-weight:bold;font-style:normal}@font-face{font-family:"Gotham Pro";src:url(fonts/GothamPro.eot);src:local("Gotham Pro"),local("GothamPro"),url(fonts/GothamPro.eot?#iefix) format("embedded-opentype"),url(fonts/GothamPro.woff) format("woff"),url(fonts/GothamPro.ttf) format("truetype");font-weight:400;font-style:normal}*,*::after,*::before{box-sizing:border-box}a{text-decoration:none;color:#000}h1,h2,h3,h4,h5,h6,ul,p{margin:0;padding:0}li{list-style:none}body{font-family:"Gotham Pro";font-size:24px;color:#000}body.noscroll{overflow:hidden}input{outline:none}button{border:none;background:rgba(0,0,0,0)}.header{background:url(assets/home-bg.jpg) no-repeat;background-size:cover;height:100vh}.container{max-width:1470px;margin:0 auto;padding:0 15px}.header__top{display:flex;justify-content:space-between;align-items:center;padding-top:17px;margin-bottom:75px}.logo__txt{font-size:16px;line-height:130%;width:208px}.header__logo{display:flex;align-items:center;-moz-column-gap:22px;column-gap:22px}.header__list{display:flex;-moz-column-gap:36px;column-gap:36px}.header__list li{font-size:18px;line-height:17px;padding-bottom:8px}.header__list li:hover{padding:0;border-bottom:3px solid #ff6f4f}.btn{font-size:16px;line-height:15px;letter-spacing:.01em;border:1px solid #ff4f4f;border-radius:24px;padding:14px 23px 13px 27px;transition:ease-in-out .3s}.btn:hover{background:#ff4f4f;color:#fff}.burger{display:none}.social{display:flex;align-items:center;-moz-column-gap:16px;column-gap:16px}.sidebar{display:none}.title{font-family:"Gotham Pro Bold";text-transform:uppercase;max-width:893px;margin-left:45px;font-size:46px;margin-bottom:21px;line-height:140%}.home__info{max-width:474px;margin-left:42px}.home__info-list li{list-style-image:url(assets/list.png)}.home__info-list{margin:39px 0 34px 55px}.btn__test{background:linear-gradient(360deg, #038483 0%, #00CDCD 100%);box-shadow:0px 6px 0px #026c6c;border-radius:40px;padding:22px 44px;font-size:20px;color:#fff;transition:.5s ease-in-out}.btn__test:hover{background:linear-gradient(360deg, #0CDCD0 0%, #038483 100%)}.title__content{font-family:"Gotham Pro Bold";font-size:50px;line-height:65px;color:#008f8e;text-align:center}.live{margin-bottom:125px}.live__box{display:grid;grid-template-columns:repeat(3, 1fr);margin-top:45px;align-items:center;margin-bottom:80px}.live__card-img{grid-column:2;grid-row-start:1;grid-row-end:3}.live__card .live__img{margin-bottom:20px}.live__card p{max-width:316px;line-height:130%}.live__card-right{display:grid;justify-items:end;text-align:right}.live__desc{max-width:986px;padding:41px 58px;text-align:center;margin:0 auto;background:linear-gradient(275.08deg, #DCF8F8 -9.98%, #ECF7FF 107.65%);box-shadow:0px 8px 30px rgba(0,0,0,.25);border-radius:40px}.why .title__content{text-align:left;margin-bottom:32px}.why__inner{display:flex;justify-content:space-between}.why__text{margin-top:83px;max-width:669px}.step__container{max-width:1509px;padding-left:42px;padding-right:0}.step__container .title__content{text-align:left}.step__plan-img{display:none}.astrofinplan{margin-bottom:58px}.astrofinplan .title__content{text-align:left;margin-bottom:32px}.astrofinplan .why__inner{align-items:inherit;position:relative}.astrofinplan__img .title__content{display:none}.container__astrofinplan{max-width:1584px}.astrofinplan__description{margin-top:38px;position:absolute;z-index:1;left:689px}.astrofinplan__description p{max-width:826px}.astrofinplan__description p+p{margin-top:7px}.astrofinplan__link{display:block;margin-top:17px;position:relative;color:#008f8e}.astrofinplan__link::after{content:"";background:url(assets/link-right.png) no-repeat;background-size:24px;height:24px;width:24px;position:absolute;bottom:0}.subtitle{text-align:center;max-width:708px;margin:0 auto;font-weight:400;margin-top:23px}.result{margin-bottom:169px}.result__container{max-width:1570px}.result__box{box-shadow:0px 8px 30px rgba(0,0,0,.25);border-radius:40px;padding:75px 70px 69px 70px}.result__inner{display:flex;justify-content:space-between;align-items:center;margin-top:26px;background:url(assets/sector.png) no-repeat;background-position:top 15px center}.result__title{font-size:22px}.result__text{font-size:18px;line-height:25px}.result__info-img{text-align:center}.result__info-one,.result__info-two{display:flex;flex-direction:column;justify-content:space-between;height:751px;flex:0 0 435px}.result_box-two{width:425px;text-align:right}.result_box-two-pos{width:433px;margin-top:30px}.result_box-two-pos-two{width:438px}.result_box-two-sfer{margin-top:20px}.btn__test{margin-top:auto}.step__inner{display:flex;background:url(assets/plan.png) no-repeat;background-position:right 0 bottom -51px;margin-top:50px;-moz-column-gap:47px;column-gap:47px}.step__info{display:flex;flex-direction:column;justify-content:space-between;margin-top:18px}.step{margin-bottom:149px}.step__description{max-width:1101px}.step__three{max-width:770px}.step__four{max-width:759px}.step__five{max-width:781px}.step__title{font-family:"Gotham Pro Bold";line-height:140%}.step__image-number,.number-ipad{display:none}.tarife{margin-bottom:163px}.tarife .title__content{text-align:left}.tarife__mobile{display:none}.tarife__inner{display:flex;flex-direction:column;box-shadow:0px 8px 30px rgba(0,0,0,.25);border-radius:40px;padding:57px 90px 63px 70px}.tarife__inner .btn__test{background:linear-gradient(360deg, #038483 0%, #00CDCD 100%);box-shadow:0px 4px 0px #026c6c;border-radius:50px;padding:14px 47px;font-size:16px}.tarife__inner .btn__test:hover{background:linear-gradient(360deg, #0CDCD0 0%, #038483 100%)}.tarife__inner .download{padding:14px 30px}.tarife__container{max-width:1570px}.tarife__box-title,.tarife__box-desc,.tarife__box-price{display:flex;justify-content:space-between;align-items:center}.tarife__box-title-desc{display:flex;justify-content:center;-moz-column-gap:32px;column-gap:32px}.tarife__box-title-desc .tarife__title-right{margin-right:45px}.tarife__box-title-content{width:50%}.tarife__box-price{padding-top:44px;border-top:1px solid #e5e5eb;justify-content:flex-end;flex:0 0 50%}.tarife__list{display:flex;flex:1 1 auto;margin-top:33px;min-height:350px;margin-bottom:45px;flex-direction:column;align-items:center;justify-content:space-between;border-top:1px solid #e5e5eb;padding-top:36px}.tarife__list-left{align-items:flex-start;flex:0 0 53%}.tarife__list-left li{font-family:"Gotham Pro"}.tarife__list li{font-size:20px;line-height:130%;font-family:"Gotham Pro"}.tarife__list li .tarife__list-bold{font-family:"Gotham Pro Bold"}.tarife__plan{text-align:center}.tarife__plan-left{margin-left:26px}.tarife__title{font-size:20px;line-height:130%}.tarife__link+.tarife__link{margin-left:33px}.tarife__link .tarife__title{text-align:center;margin-bottom:13px}.tarife__link img{margin-bottom:-7px}.answer{margin-bottom:150px}.answer__img{padding-right:103px}.answer__inner{display:flex;justify-content:space-between;margin-top:91px}.answer__item{max-width:717px}.answer__item+.answer__item{margin-top:40px}.answer__title{font-family:"Gotham Pro Bold";cursor:pointer}.answer__text{padding-top:12px;display:none;font-size:20px}.answer__input{width:0;height:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;cursor:pointer;position:relative}.answer__input::before{content:"";left:-82px;width:64px;height:64px;bottom:0;position:absolute;background:url(assets/plus.png);background-size:64px}.answer__input:checked+.answer__text{display:block}.answer__input:checked::before{background:url(assets/minus.png);background-size:64px}.questions{margin-bottom:172px}.question__box{box-shadow:0px 8px 30px rgba(0,0,0,.25);border-radius:40px;padding:70px}.question__box .title__content{text-align:left;max-width:520px}.questions__inner{display:flex;justify-content:space-between}.questions__text{max-width:362px;margin-top:16px;margin-bottom:47px}.questions__link{display:flex;align-items:center;-moz-column-gap:15px;column-gap:15px;font-family:"Gotham Pro Bold"}.questions__subtext{margin-top:63px;font-size:20px;line-height:130%}.questions__input{background:linear-gradient(180deg, #028584 0%, #03ABAA 100%);border-radius:30px;padding:62px 80px 60px}.questions__input-title{font-family:"Gotham Pro Bold";font-size:26px;text-align:center;text-transform:uppercase;color:#fff;margin-bottom:34px}.questions__social{padding-right:15px}.questions__form{max-width:300px;border:none;padding:16px 15px;border-radius:8px}.input__text{font-size:16px;line-height:15px;color:#fff;margin-bottom:11px}.input__list{display:flex;-moz-column-gap:40px;column-gap:40px}.questions__button{display:flex;-moz-column-gap:32px;column-gap:32px;margin-top:60px}.questions__button button{border:none;background:linear-gradient(360deg, #FF4F4F 0%, #FF876C 100%);box-shadow:0px 4px 0px #cc1a1a;border-radius:50px;padding:15px 46px;font-size:16px;color:#fff;cursor:pointer}.questions__button button:hover{background:linear-gradient(360deg, #FF876C 0%, #FF4F4F 100%)}.questions__button-text{max-width:428px;font-size:14px;color:#fff;line-height:130%}.footer{background:#383f46}.footer__inner{display:flex;padding-top:63px;margin-bottom:56px}.footer__logo .logo__txt{color:#fff}.footer__info{margin-right:78px}.footer__phone{display:flex;align-items:center;-moz-column-gap:15px;column-gap:15px;margin-top:48px}.footer__phone .footer__social-link{padding:6px;background:rgba(255,255,255,.15);border-radius:50%;transition:ease all .3s}.footer__phone .footer__social-link:hover{background:#009fd6}.footer__phone .footer__social-link-whatsapp{padding:12px}.footer__phone .footer__social-link-whatsapp:hover{background:#1ea918}.footer__company-link{font-size:18px;width:205px;margin-left:10px}.footer__company-link a{color:#fff}.footer__company-link a:hover{text-decoration:underline}.footer__title{font-size:20px;line-height:19px;text-transform:uppercase;color:#fff;margin-bottom:26px}.footer__text{display:block;font-size:16px;line-height:140%;color:#fff;opacity:.8;transition:all .2s}.footer__text+.footer__text{margin-top:14px}.footer__text:hover{opacity:1}.footer__text br{display:block}.footer__navmenu,.footer__navmenu-link{display:flex}.answer__designer{display:flex}.footer__course{margin-right:40px}.footer__course .footer__title{width:214px}.footer__course .footer__text{width:280px;line-height:22px}.footer__readme{width:280px;margin-right:40px}.footer__menu{width:120px;margin-right:39px}.footer__confidentiality{padding-top:29px;border-top:1px solid #fff;opacity:.6}.footer__confidentiality .footer__confidentiality-link{display:flex;justify-content:space-between;padding-bottom:59px}.footer__confidentiality p{max-width:760px;line-height:22px}.footer__confidentiality-bottom{display:flex;align-items:center;justify-content:space-between;-moz-column-gap:120px;column-gap:120px}.footer__confidentiality-bottom .footer__text+.footer__text{margin-top:0}.vk,.telegram,.instagram{position:relative;padding-left:43px}.vk::before,.telegram::before,.instagram::before{content:"";position:absolute;width:32px;height:32px;left:0;bottom:-6px}.vk::before{background:url(assets/vk.svg)}.telegram::before{background:url(assets/telegram.svg)}.instagram::before{background:url(assets/instagram.svg)}@media(max-width: 1525px){.result__inner{background-size:750px auto}.result__info-one,.result__info-two{height:659px}.tarife__list-left{flex:0 0 49%}.why__inner{padding:0 20px}}@media(max-width: 1450px){.astrofinplan .why__inner{align-items:center}.astrofinplan__description{position:static}.astrofinplan__img img{width:620px}.result__inner{background-size:650px auto}.result__inner .btn__test{padding:22px 14px;font-size:16px}.result__info-one,.result__info-two{height:588px}.step__four{max-width:639px}.step__five{max-width:619px}.step__three{max-width:750px}.step__title{width:615px}.tarife__inner .download{padding:13px 25px}.tarife__link+.tarife__link{margin-left:22px}.tarife__box-title-desc .tarife__title-right{margin-right:25px}.footer__readme{width:200px}}@media(max-width: 1320px){.step__container .title__content{text-align:center}.result__inner{background-size:549px auto}.result__inner .btn__test{font-size:12px;padding:22px 10px}.result__info-one,.result__info-two{height:509px}.result__text{font-size:16px}.questions__link a{font-size:22px}.questions__input{width:58%}.input__list{flex-direction:column;gap:18px}.questions__form{max-width:100%;width:100%}.questions__button{flex-direction:column;-moz-column-gap:0;column-gap:0;margin-top:26px;align-items:center;row-gap:26px;text-align:center}.questions__button-text{max-width:593px}.tarife__title,.tarife__list li{font-size:18px}.tarife__list-left{flex:0 0 46%}.tarife__inner .btn__test{font-size:14px}.footer__course .footer__text{width:230px}.footer__readme{width:225px;margin-right:0}}@media(max-width: 1240px){.header{background-position:center}.title__home br{display:block}.header__menu{display:none}.sidebar{display:block;position:fixed;top:0;right:-100%;width:100%;height:100vh;background-color:rgba(0,0,0,.6);transition:ease all .7s;overflow:auto}.sidebar__body{width:72%;background:#fff;min-height:55vh;margin-left:auto;padding:9px 10px 24px 24px}.open{right:0}.open .btn{display:inline-block;padding:15px 44px 14px 47px;font-size:14px;line-height:13px}.open .social__messanger{display:flex;-moz-column-gap:16px;column-gap:16px;margin-bottom:5px}.open .social__phone{display:block}.open .header__menu{margin-top:30px;display:block}.open .footer__company-link{display:block;margin-bottom:16px}.open .footer__company-link a{color:#000}.open .closed{float:right;padding-top:14px;padding-right:15px}.open .header__list{flex-direction:column}.open .header__list li{padding-bottom:32px;font-size:16px;line-height:15px;font-weight:bold}.open .header__list li:last-child{padding-bottom:24px}.open .header__list li:hover{border-bottom:none}.social__phone{display:none}.popup__form-mobile{position:fixed;width:100%;right:0;top:-100%;height:100vh;transition:all .7s;overflow:auto;background-color:rgba(0,0,0,.6)}.open-popup{top:0;padding:0 16px}.open-popup .questions__input{position:relative;min-height:52.5vh;background:#fff;margin:10% auto 0}.open-popup .questions__input-title{color:#000;font-size:22px}.open-popup .closed{position:absolute;right:22%;top:18%;padding-top:14px;padding-right:15px}.open-popup .input__text{color:#76767a}.open-popup .questions__form{border:1px solid #bfbfc3;border-radius:8px;padding:7px 15px}.open-popup .questions__button-text{font-size:12px;line-height:130%;color:#76767a}.open-popup .questions__button button{padding:12px 51px;font-size:14px}.burger{display:block;width:57px;padding:18px 16px;border-radius:50%;margin-left:4px;background:linear-gradient(180deg, #038483 0%, #00CDCD 100%);transform:rotate(180deg);box-shadow:0px 0px 30px #fff}.burger span{display:block;width:25px;height:3px;border-radius:5px;background-color:#fff}.burger span+span{margin-top:6px}.title{text-align:center;margin:0 auto 30px}.home__info{margin:0 auto}.live__desc{max-width:100%}.why .title__content{margin-bottom:22px}.why__inner{align-items:center}.why__img img{width:600px}.why__text{margin-top:0;font-size:20px;padding-right:0}.result__inner{display:grid;justify-content:center;background:none;margin-top:20px;grid-gap:30px;gap:30px}.result__title{line-height:140%}.result__info-one,.result__info-two{display:grid;grid-gap:30px;gap:30px;grid-template-columns:repeat(2, 1fr)}.result_box-one,.result_box-two{max-width:409px;box-shadow:0px 3px 10px rgba(0,0,0,.2);border-radius:16px;border-left:10px solid #ff6f4f;padding:16px 16px 16px 28px;height:170px}.result__title{font-size:19px}.result__info-one,.result__info-two{height:auto}.result__inner .btn__test{display:grid;grid-row:3;width:350px;padding:18px 44px;font-size:18px;margin:0 auto}.result_box-two-pos,.result_box-two-sfer{margin-top:0}.result_box-two{text-align:left}.result_box-one-two{border-left:10px solid #008f8e}.result_box-one-three{border-left:10px solid #46b6b6}.result_box-one-four{border-left:10px solid #a7eeee}.result_box-two-one{border-left:10px solid #008f8e}.result_box-two-sfer{border-left:10px solid #46b6b6}.result_box-two-pos{border-left:10px solid #a7eeee}.result_box-two-pos-two{border-left:10px solid #008f8e}.astrofinplan__description{font-size:20px}.astrofinplan__img img{width:460px}.step__inner{background:none}.step__plan-img{display:block;margin:0 auto;width:600px}.step__card,.step__five,.step__four,.step__three,.step__title{max-width:100%;width:100%}.tarife__title,.tarife__list li{font-size:18px}.tarife__box-title-desc{flex-basis:53%}.tarife__list-left{flex:0 0 40%}.tarife{display:none}.tarife__mobile{display:block;margin-bottom:53px}.tarife__mobile-inner{display:none}.tarife__mobile .tarife__title{font-size:22px;font-family:"Gotham Pro Bold"}.tarife__mobile-item{margin-top:26px}.tarife__mobile-box{box-shadow:0px 5px 20px rgba(0,0,0,.2);border-radius:20px;padding:30px 40px}.tarife__mobile .tarife__carusel{display:flex;justify-content:space-between;align-items:center;margin-top:14px}.tarife__mobile .tarife__list{border:none}.tarife__mobile .tarife__list-left,.tarife__mobile .tarife__list{flex:inherit;padding-top:0;margin-top:0}.tarife__mobile .tarife__mobile-input{width:0;height:0;float:right;-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;cursor:pointer;position:relative}.tarife__mobile .tarife__mobile-input::after{content:"";right:0;bottom:-14px;width:32px;height:32px;position:absolute;background:url(assets/tarife__open.svg);background-size:32px}.tarife__mobile .tarife__mobile-input:checked+.tarife__mobile-inner{display:block;border-top:1px solid #e5e5eb;padding-top:18px;margin-top:17px}.tarife__mobile .tarife__mobile-input:checked::after{background:url(assets/tarife__close.svg);background-size:32px}.tarife__mobile-open-top{display:flex;justify-content:space-between}.tarife__mobile-open-bottom{display:flex;justify-content:center;margin-bottom:112px}.tarife__mobile .tarife__link .tarife__title{margin-bottom:30px;font-size:24px}.tarife__mobile .btn__test{font-size:18px}.answer__img img{width:400px}.footer__info{margin-right:38px}.footer__course{margin-right:25px}.footer__course .footer__text{width:250px}.footer__confidentiality p{max-width:700px}.footer__menu{margin-right:0}}@media(max-width: 1170px){.answer__designer{display:flex;flex-direction:column;row-gap:38px}.footer__inner{flex-direction:column;padding-top:35px;margin-bottom:34px}.footer__navmenu{margin-top:37px;justify-content:space-around}.footer__info{display:flex;justify-content:space-between;margin-right:0;margin-left:-17px}.footer__phone{margin-top:0}.footer__course .footer__text{width:335px}.footer__confidentiality .footer__confidentiality-link{flex-direction:column;padding-bottom:40px}.footer__confidentiality-bottom{margin-top:25px}.footer__readme{width:280px}.footer__phone{-moz-column-gap:13px;column-gap:13px}.footer__company-link{width:183px;font-size:16px;margin-left:0}.footer__company-link br{display:block}.footer__company-link a{display:block}}@media(max-width: 960px){.container{padding:0 30px}.header{background-position:center top 48px}.header__top{margin-bottom:28px;padding-top:16px}br{display:none}.live__box{grid-template-columns:repeat(2, 1fr);align-items:inherit;-moz-column-gap:29px;column-gap:29px;row-gap:67px}.live__card{text-align:center;margin:0 auto;font-size:18px}.live__card-right{justify-items:center}.live__card-img{grid-column-start:1;grid-column-end:3;grid-row:3;margin:-50px auto 0}.why__inner{flex-direction:column;padding:0}.why .title__content{text-align:center;margin-bottom:9px}.why__text p+p{margin-top:8px}.result_box-one,.result_box-two{max-width:329px}.title__content{font-size:42px}.result__title{font-size:16px}.result__text{font-size:15px;line-height:140%}.subtitle{font-size:18px;line-height:140%}.result__box{box-shadow:none;padding:0}.questions__inner{flex-direction:column;align-items:center}.questions__input{width:100%}.questions__text{max-width:100%;font-size:20px;margin-top:13px;margin-bottom:19px}.questions__social{padding-right:0}.questions__button button{padding:18px 75px;font-size:18px}.questions__link{justify-content:center;margin-bottom:21px}.question__box{padding:34px 30px 30px 30px}.questions__subtext{display:none}.astrofinplan .none{display:none}.astrofinplan__img{text-align:center}.astrofinplan__img .title__content{display:block;text-align:center;margin-bottom:0}.astrofinplan__img img{width:570.82px}.astrofinplan__description{position:relative;left:0;top:0;margin-top:-35px}.astrofinplan__description p{max-width:707px;line-height:140%}.step__image img{height:775px}.step__inner{margin-left:0;-moz-column-gap:21px;column-gap:21px;margin-top:18px}.step__description{font-size:20px;line-height:140%}.step__card+.step__card{margin-top:32px}.live{margin-bottom:60px}.open-popup .closed{right:2%;top:14%}.answer__item+.answer__item{margin-top:20px}.answer__title{font-size:22px}.answer__text{line-height:140%;font-size:18px}.answer__img img{width:300px}.input__list{align-items:center}.questions__form{width:462px}}@media(max-width: 770px){.header{height:-webkit-max-content;height:-moz-max-content;height:max-content;margin-bottom:61px}.title{max-width:542px;text-align:left;font-size:42px;margin-left:0}.title__content{font-size:42px;line-height:120%}.title__home{font-size:24px}.subtitle{margin-top:13px}.logo__txt br{display:block}.live__box{margin-bottom:29px}.live__desc{padding:27px 43px;box-shadow:0px 5px 20px rgba(0,0,0,.2);border-radius:20px}.live__desc-text{font-size:18px;line-height:140%}.btn__test{padding:18px 44px}.home__info{margin-left:0}.home__info-list{margin:24px 0 42px 40px}.home__info-list li{font-size:20px}.open-popup .closed{top:21%;right:-5%;padding-right:72px}.open-popup .questions__input{margin:20% auto 0}.live__card-img{max-width:600px}.astrofinplan{margin-bottom:61px}.astrofinplan .why__inner{display:grid}.astrofinplan__description .title__content{text-align:center;grid-column:1}.astrofinplan__link::after{background-size:20px;height:20px;width:20px;bottom:0}.why__text{font-size:18px;line-height:140%;max-width:708px}.why__img img{max-width:600px}.result{margin-bottom:54px}.astrofinplan__description{font-size:18px;top:0}.astrofinplan__img{text-align:center;position:relative;top:0}.astrofinplan__img img{width:571px}.step__title{font-size:20px;line-height:140%;max-width:567px}.number{display:none}.number-ipad{display:block}.step{margin-bottom:21px}.step__info{margin-top:0}.step__image img{width:69px;height:auto}.step__container{padding:0 30px 0 12px}.answer__img{display:none}.answer__item{max-width:717px;padding-left:57px}.answer__title{font-size:20px;line-height:140%}.answer__text{padding-top:0}.answer__input::before{content:"";left:-57px;width:39px;height:39px;background-size:39px}.answer__input:checked::before{background-size:39px}.answer__item+.answer__item{margin-top:16px}.answer__inner{margin-top:20px}.answer{margin-bottom:52px}.questions{margin-bottom:57px}.questions__text{font-size:18px;font-weight:bold;text-align:center}.questions__input{padding:43px 28px 34px 27px}.questions__link a{font-size:20px}.footer__navmenu{margin-top:37px;justify-content:space-between}}@media(max-width: 770px)and (min-height: 1024px){.open-popup .closed{top:15%}}@media(max-width: 750px){.step__card+.step__card{margin-top:15px}}@media(max-width: 700px){.result_box-one,.result_box-two{width:270px}.step__description{font-size:18px}.input__name,.questions__form{width:100%}.question__box .title__content,.questions__text{text-align:center}.footer__info{flex-direction:column;row-gap:18px}.footer__navmenu{flex-direction:column;row-gap:24px}.tarife__mobile .tarife__title{font-size:20px}.tarife__title,.tarife__list li{font-size:16px}}@media(max-width: 670px){.btn{display:none}.live__card p{max-width:230px}.live__card-img{max-width:495px}.live__desc{padding:16px 23px}.live__img{width:100px}.why__img img{width:-webkit-max-content;width:-moz-max-content;width:max-content}.astrofinplan__img img{width:389px}.astrofinplan__description p{max-width:-webkit-max-content;max-width:-moz-max-content;max-width:max-content}.why__img img{max-width:428px}.step__plan-img{width:100%}.step__description{font-size:16px}.open-popup .closed{top:18%}}@media(max-width: 610px){.result__inner{-moz-column-gap:0;column-gap:0;row-gap:12px}.result__info-one,.result__info-two{grid-template-columns:1fr}.result_box-one,.result_box-two{max-width:100%;width:100%;height:142px}.result__inner .btn__test{text-align:center;width:100%;padding:14px 36px;font-size:14px}}@media(max-width: 520px){.header{margin-bottom:35px;background-position:center left -121px}.header__top{margin-bottom:25px;padding-top:14px}.container{padding:0 15px}.logo{width:89px}.title{font-size:24px;max-width:328px;margin-bottom:2px;margin-top:25px}.title__content{font-size:26px}.home__info-list li{list-style-image:url(assets/list-mobile.svg)}.subtitle,.result__text{font-size:14px}.result__title{margin-bottom:5px}.header__logo{-moz-column-gap:14px;column-gap:14px}.logo__txt{font-size:12px;max-width:156px}.title__home{max-width:328px;font-size:18px}.home__info-list{margin:13px 0 27px 36px;font-size:16px}.home__info-list li{font-size:16px}.home__info-list .result__text{font-size:14px;line-height:140%}.btn__test{display:block;text-align:center;width:100%;padding:14px 0;font-size:14px}.live__desc{background:linear-gradient(275.08deg, #DCF8F8 -9.98%, #ECF7FF 107.65%);box-shadow:0px 3px 10px rgba(0,0,0,.2);border-radius:16px}.live__box{grid-template-columns:1fr;row-gap:inherit}.live__card{display:flex;-moz-column-gap:17px;column-gap:17px;width:100%}.live__card p{text-align:left;max-width:-webkit-max-content;max-width:-moz-max-content;max-width:max-content;font-size:16px}.live__card-img{max-width:328px}.live__img{width:60px}.live__card-img{max-width:328px}.live__card-img{grid-column:1;grid-row:5}.live__desc-text{font-size:14px}.why__img img{max-width:328px}.why__text{font-size:14px}.burger{width:48px;padding:14.5px 14px}.burger span{width:20px}.burger span+span{margin-top:5px}.astrofinplan{margin-bottom:31px}.astrofinplan__img{top:0}.astrofinplan__img img{width:308px}.astrofinplan__description{font-size:14px;margin-top:0}.astrofinplan__link{margin-top:7px}.astrofinplan__link::after{background-size:16px;height:16px;width:16px;bottom:0}.step{margin-bottom:32px}.step__card+.step__card{margin-top:22px}.step__title{font-size:16px}.step__description{font-size:14px}.step__image img{height:auto;width:50px}.step__image .number{display:none}.step__image-number{display:block;margin-top:16px}.step__description{max-width:271px}.result{margin-bottom:30px}.live{margin-bottom:30px}.answer{margin-bottom:16px}.answer__input::before{content:"";left:-54px;width:36px;height:36px;background-size:36px}.answer__input:checked::before{background-size:36px}.answer__title{font-size:16px;line-height:140%}.answer__text{font-size:14px}.answer__item+.answer__item{margin-top:12px}.answer__inner{margin-top:12px;flex-direction:column}.answer__item{padding-left:54px}.answer__img{display:block;order:2;padding-right:0;text-align:center}.answer__img img{width:250px}.questions{margin-bottom:29px}.question__box{padding:18px 16px 16px 16px;box-shadow:0px 3px 10px rgba(0,0,0,.2);border-radius:16px}.questions__text{font-size:16px;max-width:245px;margin:17px auto 7px}.questions__link a{font-size:18px}.questions__input{padding:21px 23px 17px 23px;border-radius:12px}.questions__form{height:auto;padding:8px 12px}.questions__button{margin-top:17px;row-gap:19px}.questions__input-title{font-size:18px}.questions__button-text{font-size:10px}.questions__button button{padding:12px 51px;font-size:14px}.input__text{font-size:14px;line-height:13px;margin-bottom:8px}.footer .logo__txt{font-size:14px;max-width:182px}.footer__company-link a{font-size:14px}.footer__social-link-whatsapp{padding:7px}.footer__social-link{padding:2px}.footer__info{margin-left:0}.footer__title{font-size:16px;line-height:15px;margin-bottom:16px}.footer__confidentiality{padding-top:22px}.footer__confidentiality-bottom{flex-direction:column;align-items:flex-start;margin-top:16px}.footer__confidentiality-bottom .footer__text+.footer__text{margin-top:16px}.footer__text{font-size:14px}.footer__confidentiality-link .footer__text{font-size:12px}.footer__confidentiality .footer__confidentiality-link{padding-bottom:31px}.footer__navmenu{margin-top:27px}.footer__inner{padding-top:21px;margin-bottom:20px}.tarife__mobile{margin-bottom:34px}.tarife__mobile-box{box-shadow:0px 3px 10px rgba(0,0,0,.2);border-radius:16px}.tarife__mobile .tarife__list-left,.tarife__mobile .tarife__list{max-width:235px;height:235px;margin-bottom:15px}.tarife__mobile .tarife__title{font-size:16px;max-width:177px}.tarife__list{justify-content:flex-start;row-gap:21px;min-height:auto}.tarife__list-left{row-gap:15px}.tarife__title,.tarife__list li{font-size:12px}.tarife__title img,.tarife__list li img{width:22px}.tarife__mobile .tarife__mobile-input:checked::after,.tarife__mobile .tarife__mobile-input::after{width:24px;height:24px;background-size:24px;background-repeat:no-repeat;bottom:-21px}.tarife__link{margin-top:30px}.tarife__link a{font-size:14px;padding:14px 36px}.tarife__mobile .tarife__link .tarife__title{margin-bottom:12px}.tarife__mobile-open-bottom{display:flex;justify-content:center;margin-bottom:46px;margin-top:35px}.tarife__mobile .btn__test{font-size:14px}.tarife__mobile .tarife__link .tarife__title{font-size:20px;max-width:inherit}.number-ipad{display:none}.open-popup .closed{top:14%;right:-8%}}@media(max-width: 430px){.open-popup .closed{top:9%;right:-12%}.step__container{padding:0 12px}}@media(max-width: 350px){.logo{width:67px}.logo__txt{font-size:10px;max-width:140px}.live__card-img{max-width:260px}.burger{width:30px;padding:10.5px 8px}.burger span{width:15px}.why__img img{max-width:270px}.astrofinplan__img img{width:260px}.result__inner .btn__test{padding:9px 20px}.result__title{font-size:14px}.result__text{font-size:12px;line-height:120%}.step .title__content{font-size:21px}.step__card+.step__card{margin-top:27px}.step__description{font-size:12px}.questions__link{-moz-column-gap:10px;column-gap:10px}.questions__link a{font-size:15px}.questions__link a>img{width:35px}.footer__course .footer__text{width:265px}.footer__readme{width:260px}.tarife__mobile .tarife__title{font-size:14px;bottom:-26px}.tarife__title,.tarife__list li{font-size:11px}.tarife__mobile .btn__test{font-size:15px;padding:13px 15px}.tarife__mobile-open-top{padding-bottom:13px}.tarife__list{justify-content:flex-start;row-gap:26px}.tarife__list-left{row-gap:15px}.open-popup .closed{top:8%;right:-14%}.social{-moz-column-gap:0;column-gap:0}.open .btn{padding:15px 13px 14px 16px}}@media(max-width: 300px){.step__card+.step__card{margin-top:11px}.footer__company-link a{font-size:11px}.tarife__mobile .tarife__title{font-size:13px;bottom:-26px}.tarife__list li{font-size:10px}}
+
+/*# sourceMappingURL=main.36d0abe0aab2bca9834c.css.map*/
