@@ -47,6 +47,7 @@ button{
     justify-content: space-between;
     align-items: center;
     padding-top: 17px;
+    margin-bottom: 75px;
 }
 .logo__txt{
     font-size: 16px;
@@ -98,11 +99,12 @@ button{
     display: none;
 }
 .title{
+    font-family: 'Gotham Pro Bold';
     text-transform: uppercase;
     max-width: 893px;
-    margin-left: 116px;
+    margin-left: 45px;
     font-size: 46px;
-    margin-bottom: 96px;
+    margin-bottom: 21px;
     line-height: 140%;
 }
 .home__info{
@@ -195,7 +197,14 @@ button{
 .why__text{
     margin-top: 83px;
     max-width: 669px;
-    padding-right: 46px;
+}
+.step__container{
+    max-width: 1509px;
+    padding-left: 42px;
+    padding-right: 0;
+    .title__content{
+        text-align: left;
+    }
 }
 .step__plan-img{
     display: none;
@@ -246,7 +255,7 @@ button{
         height: 24px;
         width: 24px;
         position: absolute;
-        bottom: 3px;
+        bottom: 0;
     }
 }
 .subtitle{
@@ -315,9 +324,9 @@ button{
 .step__inner{
     display: flex;
     background: url('./img/plan.png') no-repeat;
-    background-position: right -82px bottom -51px;
+    background-position: right 0 bottom -51px;
     margin-top: 50px;
-    margin-left: 44px;
+    // margin-left: 44px;
     column-gap: 47px;
 }
 
@@ -346,8 +355,9 @@ button{
 }
 .step__title{
     font-family: 'Gotham Pro Bold';
+    line-height: 140%;
 }
-.step__image-number{
+.step__image-number, .number-ipad{
     display: none;
 }
 .tarife{
@@ -412,7 +422,7 @@ width: 50%;
     display: flex;
     flex: 1 1 auto; 
     margin-top: 33px;
-    height: 350px;
+    min-height: 350px;
     margin-bottom: 45px;
     flex-direction: column;
     align-items: center;
@@ -422,11 +432,17 @@ width: 50%;
     &-left{
         align-items: flex-start;
         flex: 0 0 53%;
+       li{
+        font-family: "Gotham Pro";
+       }
     }
     li{
         font-size: 20px;
         line-height: 130%;
-        font-family: 'Gotham Pro Bold';
+        font-family: 'Gotham Pro';
+        .tarife__list-bold{
+            font-family: 'Gotham Pro Bold';
+        }
     }
 }
 
@@ -673,6 +689,9 @@ width: 50%;
     }
     &:hover{
         opacity: 1;
+    }
+    br{
+        display: block;
     }
 }
 .footer__navmenu, .footer__navmenu-link{

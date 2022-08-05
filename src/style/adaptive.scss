@@ -12,6 +12,9 @@
     .tarife__list-left{
         flex: 0 0 49%;
     }
+    .why__inner{
+        padding: 0 20px;
+    }
 }
 @media(max-width: 1450px){
     .astrofinplan .why__inner{
@@ -62,6 +65,9 @@
     }
 }
 @media(max-width: 1320px){
+    .step__container .title__content{
+        text-align: center;
+    }
     .result__inner{
         background-size: 549px auto;
         .btn__test{
@@ -123,7 +129,12 @@
     .header{
         background-position: center;
     }
-    .header__menu, .btn {
+    .title__home{
+        br{
+            display: block;
+        }
+    }
+    .header__menu {
         display: none;
     }
     .sidebar{
@@ -221,13 +232,13 @@
     }
     .open-popup{
         top: 0;
-        // padding: 50% 16px;
+        padding: 0 16px;
 
         .questions__input{
             position: relative;
             min-height: 52.5vh;
             background: #FFFFFF;
-            margin: 55% auto 0;
+            margin: 10% auto 0;
             &-title{
                 color: #000;
                 font-size: 22px;
@@ -235,8 +246,8 @@
         }
         .closed{
             position: absolute;
-            right: 0;
-            top: 30%;
+            right: 22%;
+            top: 18%;
             padding-top: 14px;
             padding-right: 15px;
         }
@@ -265,6 +276,7 @@
         border-radius: 50%;
         margin-left: 4px;
         background: linear-gradient(180deg, #038483 0%, #00CDCD 100%);
+        transform: rotate(180deg);
         box-shadow: 0px 0px 30px #FFFFFF;
         span{
            display: block;
@@ -289,7 +301,7 @@
     }
     .why .title__content{
         margin-bottom: 22px;
-        text-align: center;
+        // text-align: center;
     }
     .why__inner{
         align-items: center;
@@ -564,6 +576,13 @@
     .container{
         padding: 0 30px;
     }
+    .header {
+        background-position: center top 48px;
+    }
+    .header__top{
+        margin-bottom: 28px;
+        padding-top: 16px;
+    }
     br{
         display: none;
     }
@@ -572,7 +591,6 @@
         align-items: inherit;
         column-gap: 29px;
         row-gap: 67px;
-      
     }
     .live__card{
         text-align: center;
@@ -586,10 +604,15 @@
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row: 3;
-        margin: 0 auto;
+        margin: -50px auto 0;
     }
     .why__inner{
         flex-direction: column;
+        padding: 0;
+    }
+    .why .title__content{
+        text-align: center;
+        margin-bottom: 9px;
     }
     .why__text{
         p+p{
@@ -667,7 +690,8 @@
     .astrofinplan__description {
         position: relative;
         left: 0;
-        top: -95px;
+        top: 0;
+        margin-top: -35px;
         p{
             max-width: 707px;
             line-height: 140%;
@@ -679,7 +703,7 @@
     .step__inner{
         margin-left: 0;
         column-gap: 21px;
-        margin-top: 0;
+        margin-top: 18px;
     }
     .step__description{
         font-size: 20px;
@@ -690,6 +714,10 @@
     }
     .live{
         margin-bottom: 60px;
+    }
+    .open-popup .closed {
+        right: 2%;
+        top: 14%;
     }
     .answer__item + .answer__item {
         margin-top: 20px;
@@ -742,6 +770,8 @@
     }
     .live__desc{
         padding: 27px 43px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
     }
 
     .live__desc-text{
@@ -760,8 +790,21 @@
             font-size: 20px;
         }
     }
+    .open-popup {
+        .closed{
+            top: 21%;
+            right: -5%;
+            padding-right: 72px;
+        }
+    .questions__input{
+        // width: max-content;
+        margin: 20% auto 0;
+    }}
     .live__card-img{
      max-width: 600px;
+    }
+    .astrofinplan{
+        margin-bottom: 61px;
     }
     .astrofinplan .why__inner{
         display: grid;
@@ -775,7 +818,7 @@
         background-size: 20px;
         height: 20px;
         width: 20px;
-        bottom: 7px;
+        bottom: 0;
     }}
 
     .why__text{
@@ -789,15 +832,45 @@
             max-width: 600px;
         }
     }
+    .result {
+        margin-bottom: 54px;
+    }
     .astrofinplan__description{
         font-size: 18px;
+        top: 0;
     }
-    .astrofinplan__img img {
-        width: 571px;
+    .astrofinplan__img {
+        text-align: center;
+        position: relative;
+        top: 0;
+        img {
+            width: 571px;
+        }
     }
+
     .step__title {
         font-size: 20px;
         line-height: 140%;
+        max-width: 567px;
+    }
+    .number{
+        display: none;
+        &-ipad{
+            display: block;
+        }
+    }
+    .step {
+        margin-bottom: 21px;
+    }
+    .step__info{
+        margin-top: 0;
+    }
+    .step__image img{
+        width: 69px;
+        height: auto;
+    }
+    .step__container{
+        padding: 0 30px 0 12px;
     }
     .answer__img {
         display: none;
@@ -838,6 +911,7 @@
     .questions__text{
         font-size: 18px;
         font-weight: bold;
+        text-align: center;
     }
     .questions__input{
         padding: 43px 28px 34px 27px;
@@ -848,6 +922,16 @@
     .footer__navmenu{
         margin-top: 37px;
         justify-content: space-between;
+    }
+}
+@media(max-width: 770px) and (min-height:1024px){
+    .open-popup .closed {
+        top: 15%;
+    }
+}
+@media (max-width: 750px){
+    .step__card + .step__card {
+        margin-top: 15px;
     }
 }
 @media(max-width: 700px){
@@ -903,7 +987,6 @@
         width: 389px;
     }
     .astrofinplan__description {
-        top: -75px;
         p{
             max-width: max-content;
         }
@@ -918,6 +1001,9 @@
     }
     .step__description{
         font-size: 16px;
+    }
+    .open-popup .closed {
+        top: 18%;
     }
 }
 @media(max-width: 610px){
@@ -943,6 +1029,14 @@
 
 }
 @media(max-width: 520px){
+    .header{
+        margin-bottom: 35px;
+        background-position: center left -121px;
+    }
+    .header__top {
+        margin-bottom: 25px;
+        padding-top: 14px;
+    }
     .container{
         padding: 0 15px;
     }
@@ -958,7 +1052,9 @@
             font-size: 26px;
         }
     }
-
+    .home__info-list li {
+        list-style-image: url('./img/list-mobile.svg');
+    }
     .subtitle, .result__text{
         font-size: 14px;
     }
@@ -977,7 +1073,7 @@
         font-size: 18px;
     }
     .home__info-list {
-        margin: 13px 0 27px 40px;
+        margin: 13px 0 27px 36px;
         font-size: 16px;
         li{
               font-size: 16px;
@@ -995,6 +1091,11 @@
         width: 100%;
         padding: 14px 0;
         font-size: 14px;
+    }
+    .live__desc{
+        background: linear-gradient(275.08deg, #DCF8F8 -9.98%, #ECF7FF 107.65%);
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 16px;
     }
     .live__box{
         grid-template-columns: 1fr;
@@ -1044,11 +1145,18 @@
             }
         }
     }
+    .astrofinplan{
+        margin-bottom: 31px;
+    }
+    .astrofinplan__img {
+        top: 0;
+        img {
+            width: 308px;
+        }
+    }
     .astrofinplan__description {
         font-size: 14px;
-    }
-    .astrofinplan__img img {
-        width: 308px;
+        margin-top: 0;
     }
     .astrofinplan__link{
         margin-top: 7px;
@@ -1056,8 +1164,11 @@
             background-size: 16px;
             height: 16px;
             width: 16px;
-            bottom: 9px;
+            bottom: 0;
         }
+    }
+    .step {
+        margin-bottom: 32px;
     }
     .step__card + .step__card{
         margin-top: 22px;
@@ -1070,6 +1181,7 @@
     }
     .step__image img{
         height: auto;
+        width: 50px;
     }
     .step__image .number{
         display: none;
@@ -1081,6 +1193,9 @@
     }
     .step__description{
         max-width: 271px;
+    }
+    .result {
+        margin-bottom: 30px;
     }
     .live{
         margin-bottom: 30px;
@@ -1134,13 +1249,15 @@
     }
     .questions__text{
         font-size: 16px;
-        margin-top: 17px;
+        max-width: 245px;
+        margin: 17px auto 7px;
     }
     .questions__link a{
         font-size: 18px;
     }
     .questions__input{
         padding: 21px 23px 17px 23px;
+        border-radius: 12px;
     }
     .questions__form {
         height: auto;
@@ -1186,9 +1303,13 @@
         line-height: 15px;
         margin-bottom: 16px;
     }
+    .footer__confidentiality{
+        padding-top: 22px;
+    }
     .footer__confidentiality-bottom{
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 16px;
     }
     .footer__confidentiality-bottom .footer__text + .footer__text {
         margin-top: 16px;
@@ -1196,12 +1317,25 @@
     .footer__text{
         font-size: 14px;
     }
+    .footer__confidentiality-link .footer__text{
+        font-size: 12px;
+    }
+    .footer__confidentiality .footer__confidentiality-link{
+        padding-bottom: 31px;
+    }
     .footer__navmenu{
         margin-top: 27px;
     }
     .footer__inner {
         padding-top: 21px;
         margin-bottom: 20px;
+    }
+    .tarife__mobile{
+        margin-bottom: 34px;
+        &-box{
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+        }
     }
     .tarife__mobile .tarife__list-left, .tarife__mobile .tarife__list {
     max-width: 235px;
@@ -1211,6 +1345,14 @@
     .tarife__mobile .tarife__title{
         font-size: 16px;
         max-width: 177px;
+    }
+    .tarife__list{
+        justify-content: flex-start;
+        row-gap: 21px;
+        min-height: auto;
+        &-left{
+            row-gap: 15px;
+        }
     }
     .tarife__title, .tarife__list li{
         font-size: 12px;
@@ -1227,6 +1369,7 @@
         bottom: -21px;
     }
     .tarife__link{
+        margin-top: 30px;
         a{
             font-size: 14px;
             padding: 14px 36px;
@@ -1239,15 +1382,32 @@
         display: flex;
         justify-content: center;
         margin-bottom: 46px;
+        margin-top: 35px;
     }
     .tarife__mobile .btn__test {
         font-size: 14px;
     }
     .tarife__mobile .tarife__link .tarife__title {
         font-size: 20px;
+        max-width: inherit;
+    }
+    .number-ipad{
+        display: none;
+    }
+    .open-popup .closed {
+        top: 14%;
+        right: -8%;
     }
 }
-
+@media(max-width: 430px){
+    .open-popup .closed {
+        top: 9%;
+        right: -12%;
+    }
+    .step__container {
+        padding: 0 12px;
+    }
+}
 @media (max-width: 350px){
     .logo{
         width: 67px;
@@ -1323,6 +1483,23 @@
     .tarife__mobile-open-top {
         padding-bottom: 13px;
     }
+    .tarife__list {
+        justify-content: flex-start;
+        row-gap: 26px;
+        &-left{
+            row-gap: 15px;
+        }
+    }
+    .open-popup .closed {
+        top: 8%;
+        right: -14%;
+    }
+    .social{
+        column-gap: 0;
+    }
+    .open .btn {
+        padding: 15px 13px 14px 16px;
+    }
 }
 @media (max-width: 300px){
     .step__card + .step__card {
@@ -1334,5 +1511,8 @@
     .tarife__mobile .tarife__title{
         font-size: 13px;
         bottom: -26px;
+    }
+    .tarife__list li {
+        font-size: 10px;
     }
 }
