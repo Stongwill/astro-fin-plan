@@ -12,13 +12,15 @@ h1,h2,h3,h4,h5,h6,ul,p{
     margin: 0;
     padding: 0; 
 }
+html{
+    scroll-behavior: smooth;
+}
 li{
     list-style: none;
 }
 body{
     font-family: 'Gotham Pro';
     font-size: 24px;
-    // line-height: 140%;
     color: #000000;
     &.noscroll{
         overflow: hidden;
@@ -95,9 +97,10 @@ button{
     align-items: center;
     column-gap: 16px;
 }
-.sidebar{
+.sidebar ,.popup__form-mobile{
     display: none;
 }
+
 .title{
     font-family: 'Gotham Pro Bold';
     text-transform: uppercase;
@@ -300,7 +303,6 @@ button{
     flex-direction: column;
     justify-content: space-between;
     height: 751px;
-    // width: 435px;
     flex: 0 0 435px;
 }
 .result_box-two{
@@ -326,7 +328,6 @@ button{
     background: url('./img/plan.png') no-repeat;
     background-position: right 0 bottom -51px;
     margin-top: 50px;
-    // margin-left: 44px;
     column-gap: 47px;
 }
 
@@ -407,8 +408,7 @@ button{
     }
 }
 .tarife__box-title-content{
-// padding-right: 560px;
-width: 50%;
+        width: 50%;
 }
 .tarife__box-price{
     padding-top: 44px;
@@ -416,7 +416,6 @@ width: 50%;
     justify-content: flex-end;
     flex: 0 0 50%;
 }
-
 
 .tarife__list{
     display: flex;
@@ -445,7 +444,6 @@ width: 50%;
         }
     }
 }
-
 
 .tarife__plan{
     text-align: center;
@@ -619,6 +617,15 @@ width: 50%;
     font-size: 14px;
     color: #fff;
     line-height: 130%;
+    a{
+        color: inherit;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            color: #d12626;
+        }
+    }
 }
 
 .footer{

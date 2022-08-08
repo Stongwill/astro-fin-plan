@@ -147,15 +147,6 @@
         background-color: rgba(0,0,0, 0.6);
         transition:  ease all .7s;
         overflow: auto;
-       
-        // &__area{
-        //     position: absolute;
-        //     left: 0;
-        //     top: 0;
-        //     width: 100%;
-        //     height: 100vh;
-        //     // z-index: -1;
-        // }
         &__body{
         width: 72%;
         background: #FFFFFF;
@@ -183,7 +174,7 @@
             display: block;
         }
         .header__menu{
-            margin-top: 30px;
+            margin-top: 2px;
             display: block;
         
         }
@@ -195,9 +186,8 @@
                 }
         }
         .closed{
-            float: right;
-            padding-top: 14px;
-            padding-right: 15px;
+            display: block;
+            margin-left: auto;
         }
         .header__list{
             flex-direction: column;
@@ -219,12 +209,12 @@
         display: none;
     }
     .popup__form-mobile{
+        display: block;
         position: fixed;
         width: 100%;
         right: 0;
         top: -100%;
         height: 100vh;
-        // height: 52.5vh;
         transition: all .7s;
         overflow: auto;
         background-color: rgba(0,0,0,0.6);
@@ -301,7 +291,6 @@
     }
     .why .title__content{
         margin-bottom: 22px;
-        // text-align: center;
     }
     .why__inner{
         align-items: center;
@@ -481,7 +470,9 @@
          &-open-top{
             display: flex;
             justify-content: space-between;
-         }
+            min-height: 235px;
+        }
+         
          &-open-bottom{
             display: flex;
             justify-content: center;
@@ -797,7 +788,6 @@
             padding-right: 72px;
         }
     .questions__input{
-        // width: max-content;
         margin: 20% auto 0;
     }}
     .live__card-img{
@@ -927,6 +917,11 @@
 @media(max-width: 770px) and (min-height:1024px){
     .open-popup .closed {
         top: 15%;
+    }
+}
+@media(max-width: 820px) and (min-height:1180px){
+    .open-popup .closed {
+        top: 7%;
     }
 }
 @media (max-width: 750px){
@@ -1077,7 +1072,6 @@
         font-size: 16px;
         li{
               font-size: 16px;
-            //   background-size: 26.67px;
         }
         .result__text {
             font-size: 14px;
@@ -1185,7 +1179,6 @@
     }
     .step__image .number{
         display: none;
-        // width: 50px;
     }
     .step__image-number{
         display: block;
@@ -1339,7 +1332,7 @@
     }
     .tarife__mobile .tarife__list-left, .tarife__mobile .tarife__list {
     max-width: 235px;
-    height: 235px;
+    justify-content: space-between;
     margin-bottom: 15px;
         }
     .tarife__mobile .tarife__title{
@@ -1349,7 +1342,6 @@
     .tarife__list{
         justify-content: flex-start;
         row-gap: 21px;
-        min-height: auto;
         &-left{
             row-gap: 15px;
         }
@@ -1366,7 +1358,7 @@
         height: 24px;
         background-size: 24px;
         background-repeat: no-repeat;
-        bottom: -21px;
+        bottom: -27px;
     }
     .tarife__link{
         margin-top: 30px;
