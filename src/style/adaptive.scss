@@ -1412,10 +1412,13 @@
         max-width: 260px;
     }
     .burger {
-        width: 30px;
-        padding: 10.5px 8px;
+         width: 30px;
+         padding: 10.5px 10px;
         span{
-            width: 15px;
+            width: 11px;
+            &+span{
+                margin-top: 3px;
+            }
         }
     }
     .why__img img {
